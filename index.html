@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="II Jam Attack: Jornada de videojuegos indie y programación en Viator. Charlas, presentaciones de proyectos, networking y más. Organizado por Arcade Bits con la colaboración de IES Al-Andalus, La Jaquería y el Ayuntamiento de Viator.">
+<link rel="icon" type="image/png" href="img/faviconjam.png">
+<meta name="keywords" content="Jam Attack, videojuegos indie, programación, Viator, evento, charlas, networking, Arcade Bits, IES Al-Andalus, La Jaquería, Heartbyte Studios, Upware Studios, desarrollo de videojuegos, inscripciones, proyectos, Andalucía">
+  <title>II Jam Attack - 14 de Junio de 2025</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .font-press-start {
+      font-family: 'Press Start 2P', cursive;
+    }
+    @media (max-width: 767px) {
+        section {
+            padding-left: 1em;
+            padding-right: 1em;
+        }
+    }
+  </style>
+</head>
+<body class="bg-white text-[#4a004a] font-sans leading-relaxed">
+
+  <!-- Navegación Responsive -->
+  <nav class="bg-[#a64ca6] text-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <div class="flex-shrink-0 text-lg font-bold">Jam Attack 2</div>
+        <!-- Botón hamburguesa -->
+        <div class="md:hidden">
+          <button id="menu-toggle" class="text-white focus:outline-none focus:ring-2 focus:ring-white">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2"
+                 viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
+        <!-- Links (desktop) -->
+        <div class="hidden md:flex space-x-6">
+          <a href="#home" class="hover:underline transition">Home</a>
+          <a href="#horario" class="hover:underline transition">Programa</a>
+          <a href="#inscripcion" class="hover:underline transition">Inscripción</a>
+          <a href="#organiza" class="hover:underline transition">Organiza</a>
+          <a href="#contacto" class="hover:underline transition">Contacto</a>
+        </div>
+      </div>
+    </div>
+    <!-- Links (mobile) -->
+    <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 space-y-2">
+      <a href="#home" class="block hover:underline">Home</a>
+      <a href="#horario" class="block hover:underline">Programa</a>
+      <a href="#inscripcion" class="block hover:underline">Inscripción</a>
+      <a href="#organiza" class="block hover:underline">Organiza</a>
+      <a href="#contacto" class="block hover:underline">Contacto</a>
+    </div>
+  </nav>
+
+  <!-- Script para toggle del menú móvil -->
+  <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    toggleBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+  <!-- Encabezado -->
+  <section id="home">
+    <h2 class="mx-auto max-w-3xl font-press-start text-center text-[#a64ca6] border-4 border-yellow-400 p-4 rounded-xl m-4">
+      ¡Bienvenidos a la II jornada de videojuegos indie y programación "Jam Attack"!
+    </h2>
+  </section>
+
+  <!-- Contenido principal -->
+  <section id="programa" class="max-w-3xl mx-auto bg-gradient-to-br from-[#a64ca6] to-[#f8c8dc] border-2 border-[#a64ca6] p-6 rounded-2xl">
+    <div class="flex flex-col md:flex-row items-center gap-6">
+      <div class="flex-1">
+        Este evento único se llevará a cabo el <strong>14 de junio</strong> de <strong>11:00 a 14:00</strong> y <strong>17:00 a 20:00</strong> en 
+        <a href="https://maps.app.goo.gl/Tt5JT6M7oHGuxsg58" target="_blank" class="text-[#ffa600] hover:underline">
+          Casa de la Cultura
+        </a> en Viator. 🎮
+
+        Contaremos con la colaboración de <strong>I.E.S. Al-Andalus</strong>, <strong>La Jaquería</strong> y <strong>el Ayuntamiento de Viator</strong>,
+        que aportarán su conocimiento y pasión por el desarrollo de videojuegos. 🕹️
+
+        Además, tendremos el honor de recibir a invitados especiales como <strong>Don Aitor</strong>, creador de <em>Rap Attack</em>; 
+        <strong>Heartbyte Studios</strong>, creadores de <em>Mind Corridors</em>; y <strong>Hilarion Luque</strong> de <em>Upware Studios</em>.
+
+        ¡Esperamos tus proyectos y estamos emocionados de ver las innovaciones que nos traerás!
+      </div>
+      <img src="img/JA-PJ_480x480.png" alt="Logo evento" class="w-[150px] md:ml-6">
+    </div>
+    
+    <div class="mt-8" id="horario">
+      <h3 class="font-press-start text-lg text-[#4a004a] mb-4 text-center">Horario del Evento</h3>
+      <div class="overflow-x-auto">
+        <table class="min-w-full bg-white border border-[#a64ca6] rounded-lg shadow">
+          <thead>
+            <tr>
+              <th class="px-4 py-2 bg-[#a64ca6] text-white">Hora</th>
+              <th class="px-4 py-2 bg-[#a64ca6] text-white">Actividad</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Mañana -->
+            <tr>
+              <td class="px-4 py-2 font-bold text-[#a64ca6] bg-[#f8c8dc]" colspan="2">Mañana (11:00 - 14:00)</td>
+            </tr>
+            <tr><td class="px-4 py-2">11:00 - 11:15</td><td class="px-4 py-2">Recepción y bienvenida</td></tr>
+            <tr><td class="px-4 py-2">11:15 - 13:30</td><td class="px-4 py-2">Presentación de proyectos en el recinto de los alumnos y otros ponentes</td></tr>
+            <tr><td class="px-4 py-2">13:30 - 14:00</td><td class="px-4 py-2">Networking y descanso</td></tr>
+
+            <!-- Tarde -->
+            <tr>
+              <td class="px-4 py-2 font-bold text-[#a64ca6] bg-[#f8c8dc]" colspan="2">Tarde (17:00 - 20:00)</td>
+            </tr>
+            <tr><td class="px-4 py-2">17:00 - 19:00</td><td class="px-4 py-2">Presentación de proyectos y demos</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="inscripcion" class="max-w-3xl mx-auto mt-10 p-4">
+   <h3 class="font-press-start text-lg text-[#4a004a] mb-4 text-center">Inscripción</h3>
+   <p class="text-center mb-6 text-lg">
+        Si quieres presentar un proyecto o simplemente darte a conocer, no dudes en rellenar el siguiente formulario con tus datos y el proyecto que vas a presentar.
+    </p>
+   
+    <p class="text-center">
+        <a title="Formulario de Inscripción" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeHPkkNp2OXOqhePzRr-enhNpBk8JMvGfd6AOviuMGWRYNS4Q/viewform?usp=mail_form_link" class="bg-[#a64ca6] text-white font-bold py-2 px-4 rounded hover:bg-[#ffa600] transition duration-300">
+            Formulario de Inscripción
+        </a>
+    </p>
+  </section>
+
+  <!-- Secciones adicionales (en blanco por ahora) -->
+<section id="organiza" class="max-w-3xl mx-auto mt-10 p-4 border-2 border-[#a64ca6] rounded-2xl">
+    <h3 class="font-press-start text-lg text-[#4a004a] mb-4 text-center">Organiza</h3>
+    <div class="flex flex-wrap justify-center items-center gap-8 mb-8">
+        <a href="https://arcadebits.es/" title="Arcade Bits" target="_blank" rel="noopener">
+            <img src="img/logoarcade.png" alt="Arcade Bits" class="h-16 object-contain" />
+        </a>
+    </div>
+
+    <h4 class="font-press-start text-base text-[#4a004a] mb-4 text-center">Colabora</h4>
+    <div class="flex flex-wrap justify-center items-center gap-8">
+        <a href="https://viator.es/" title="Ayuntamiento de Viator" target="_blank" rel="noopener">
+            <img src="img/AyuViator.png" alt="Ayuntamiento de Viator" class="h-14 object-contain" />
+        </a>
+        <a href="https://lajaqueria.com/" title="La Jaquería" target="_blank" rel="noopener">
+            <img src="img/jaqueria.png" alt="La Jaquería" class="h-14 object-contain" />
+        </a>
+        <a href="https://iesalandalus.org/" title="IES Al-Andalus" target="_blank" rel="noopener">
+            <img src="img/logoies.png" alt="IES Al-Andalus" class="h-14 object-contain" />
+        </a>
+        <a href="https://upwarestudios.com/" title="Upware Studios" target="_blank" rel="noopener">
+            <img src="img/upware.jpeg" alt="Upware Studios" class="h-14 object-contain" />
+        </a>
+        <a href="https://x.com/heartbytestudio" title="Heartbyte Studio" target="_blank" rel="noopener">
+            <img src="img/heartbytestudios.png" alt="Heartbyte Studios" class="h-14 object-contain" />
+        </a>
+        <a href="https://www.twitch.tv/makeclassicgames/" title="Make Classic Games" target="_blank" rel="noopener">
+            <img src="img/mkg.png" alt="Make Classic Games" class="h-14 object-contain" />
+        </a>
+    </div>
+</section>
+
+
+
+  <section id="contacto" class="max-w-3xl mx-auto mt-10 p-4">
+    <!-- Contenido de "Contacto" -->
+    <h3 class="font-press-start text-lg text-[#4a004a] mb-4 text-center">Contacto</h3>
+    <p class="text-center mb-6 text-lg">
+        Si tienes alguna pregunta o necesitas más información, no dudes en ponerte en contacto con nosotros a través de nuestro formulario de contacto:
+    
+    </p>
+    <p class="text-center">
+        <a title="Formulario de Contacto" target="_blank" href="https://arcadebits.es/pages/contacto" class="bg-[#a64ca6] text-white font-bold py-2 px-4 rounded hover:bg-[#ffa600] transition duration-300">
+            Formulario de Contacto
+        </a>
+    </p>
+    <p class="text-center mt-6">
+        También puedes seguirnos en nuestras redes sociales para estar al tanto de todas las novedades:
+    </p>
+    <p class="text-center mt-4">
+        <div class="flex justify-center gap-6">
+      <a href="https://x.com/arcadebits" title="x(Twitter)" target="_blank" rel="noopener" aria-label="X (Twitter)">
+        <img src="img/xlogo.webp" alt="X (Twitter)" class="h-8 w-8 hover:scale-110 transition" />
+      </a>
+      <a href="https://facebook.com/arcadebits" title="Facebook" target="_blank" rel="noopener" aria-label="Facebook">
+        <img src="img/facebooklogo.png" alt="Facebook" class="h-8 w-8 hover:scale-110 transition" />
+      </a>
+      <a href="https://instagram.com/arcadebits" title="Instagram" target="_blank" rel="noopener" aria-label="Instagram">
+        <img src="img/instagram.webp" alt="Instagram" class="h-8 w-8 hover:scale-110 transition" />
+      </a>
+    </div>
+    </p>
+  </section>
+<footer class="bg-[#a64ca6] text-white text-center py-4 mt-10">
+    <p class="text-sm">
+        &copy; 2025
+        <a href="https://arcadebits.es/" target="_blank" rel="noopener" class="underline hover:text-yellow-300">
+            Arcade Bits
+        </a>
+    </p>
+</footer>
+</body>
+</html>

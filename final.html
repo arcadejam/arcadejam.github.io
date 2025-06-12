@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transición de Video</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Press Start 2P', cursive;
+            overflow: hidden;
+            background: linear-gradient(to bottom right, #B07D93, #A64CA6);
+        }
+
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .title {
+            text-align: center;
+            color: #4a004a;
+            font-size: 3vw;
+            padding: 0.5em 0 0.2em;
+            flex-shrink: 0;
+            margin-top: 0;
+        }
+
+        .content {
+            display: flex;
+            flex: 1;
+        }
+
+        .left {
+            flex: 1;
+            display: flex;
+            margin-left: 3em;
+        }
+
+        .right {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2vw;
+
+            white-space: nowrap;
+            margin-top: 2em;
+        }
+
+        .animated-text span {
+            opacity: 0;
+            transform: translateY(30px);
+            display: inline-block;
+            animation: slideUpFade 1s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+        }
+
+        .animated-text {
+            text-decoration: underline;
+            text-decoration-line: underline;
+            margin: 7em 0;
+            margin-top: 15em;
+            text-align: center;
+        }
+
+        .animated-text span:nth-child(n) {
+            animation-delay: calc(0.05s * var(--i));
+        }
+
+        @keyframes slideUpFade {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+
+        img.poster {
+            aspect-ratio: auto;
+            max-width: 35em;
+            width: auto;
+            height: auto;
+            background: #fff;
+            border: 4px solid #a64ca6;
+            border-radius: 1em;
+            margin: 0.5em;
+            margin-bottom: 1em;
+            padding: 1em;
+            overflow: hidden;
+        }
+
+        .logo {
+            perspective: 1000px;
+            margin-top: auto;
+            margin-bottom: 2em;
+            /* <-- Empuja el logo hacia el final del contenedor */
+        }
+
+        .logo img {
+            max-width: 5em;
+            width: auto;
+            height: auto;
+            margin-top: 1em;
+            animation: spinY 2s linear infinite;
+            transform-style: preserve-3d;
+        }
+
+        @keyframes spinY {
+            from {
+                transform: rotateY(0deg);
+            }
+
+            to {
+                transform: rotateY(360deg);
+            }
+        }
+
+
+        @keyframes fallDown {
+            to {
+                opacity: 0;
+                transform: translateY(100px) rotateZ(30deg);
+            }
+        }
+
+        .animated-text span.fall {
+            animation: fallDown 1s forwards;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="left">
+                <img class="poster" src="img/cartel.jpg" alt="Cartel del evento">
+            </div>
+            <div class="right">
+                <div class="title">Jam Attack 2</div>
+                <div class="animated-text" id="animatedText"></div>
+                <div class="logo">
+                    <img src="img/mkg.png" alt="logo MKG" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const text = "Hasta la próxima!!";
+        const container = document.getElementById("animatedText");
+
+        function createSpans() {
+            container.innerHTML = "";
+            text.split("").forEach((char, i) => {
+                const span = document.createElement("span");
+                span.innerHTML = char === " " ? "&nbsp;" : char;
+                span.style.setProperty("--i", i);
+                container.appendChild(span);
+            });
+        }
+
+        function animateFall() {
+            const spans = container.querySelectorAll("span");
+            spans.forEach((span, i) => {
+                setTimeout(() => {
+                    span.classList.add("fall");
+                }, i * 50);
+            });
+        }
+
+        function resetAnimation() {
+            const spans = container.querySelectorAll("span");
+            spans.forEach((span) => {
+                span.classList.remove("fall");
+                // Fuerza reflow para reiniciar la animación CSS
+                void span.offsetWidth;
+            });
+        }
+
+        function loopAnimation() {
+            createSpans();
+            setTimeout(() => {
+                animateFall();
+                setTimeout(() => {
+                    resetAnimation();
+                    loopAnimation();
+                }, 1500 + text.length * 50); // espera a que termine la caída
+            }, 7000);
+        }
+
+        loopAnimation();
+    </script>
+</body>
+
+</html>

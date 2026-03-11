@@ -27,6 +27,115 @@
   </style>
 </head>
 
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const container = document.getElementById("equipos");
+  const contador = document.getElementById("contador-equipos");
+
+  if (!container) return;
+
+  mostrarProximamente();
+
+  fetch("equipos.json")
+    .then(res => {
+      if (!res.ok) throw new Error("No existe JSON");
+      return res.json();
+    })
+    .then(data => {
+
+      if (!data.equipos || data.equipos.length === 0) return;
+
+      container.innerHTML = "";
+
+      if (contador)
+        contador.textContent = "🎮 " + data.equipos.length + " equipos confirmados";
+
+      data.equipos.forEach(equipo => {
+
+        const miembrosHTML = equipo.miembros.map(m => `
+          <li>
+            <b>${m.nombre}</b> — ${m.rol}<br>
+            <span class="text-sm text-gray-400">${m.descripcion}</span>
+          </li>
+        `).join("");
+
+        const section = document.createElement("section");
+
+        section.className =
+          "container max-w-5xl mx-auto p-8 md:p-10 mt-8 bg-gray-900/80 border-t-4 border-[#a64ca6] rounded-3xl";
+
+        section.innerHTML = `
+          <div class="flex flex-col md:flex-row gap-6">
+
+            <img src="${equipo.logo}" class="w-32 h-32 object-contain">
+
+            <div>
+
+              <h2 class="text-xl font-bold text-yellow-400">
+                ${equipo.titulo}
+              </h2>
+
+              <p class="text-purple-300 mb-3">${equipo.equipo}</p>
+
+              <p class="mb-4">${equipo.descripcion}</p>
+
+              <p class="text-sm mb-3">
+                <b>Género:</b> ${equipo.genero} |
+                <b>Motor:</b> ${equipo.motor} |
+                <b>Jugadores:</b> ${equipo.jugadores}
+              </p>
+
+              <ul class="list-disc ml-5">
+                ${miembrosHTML}
+              </ul>
+
+            </div>
+
+          </div>
+        `;
+
+        container.appendChild(section);
+
+      });
+
+    })
+    .catch(() => {
+
+      if (contador)
+        contador.textContent = "";
+
+    });
+
+});
+
+
+function mostrarProximamente() {
+
+  const container = document.getElementById("equipos");
+
+  const section = document.createElement("section");
+
+  section.className =
+    "container max-w-5xl mx-auto p-8 md:p-10 mt-8 bg-gray-900/80 border-t-4 border-[#a64ca6] rounded-3xl shadow-[0_-5px_25px_rgba(166,76,166,0.2)]"
+
+  section.innerHTML = `
+    <h2 class="font-press-start text-center text-yellow-400 text-xl">
+      PRÓXIMAMENTE
+    </h2>
+
+    <p class="mt-4 text-center text-purple-300">
+      Los equipos participantes se anunciarán pronto.
+    </p>
+  `;
+
+  container.appendChild(section);
+
+}
+
+</script>
+
 <body
   class="bg-gradient-to-br from-gray-900 to-[#4a004a]/40 text-gray-100 font-sans leading-relaxed min-h-screen relative">
 
@@ -50,8 +159,9 @@
           <a href="index.html#plano" class="hover:text-yellow-400 transition">Plano</a>
           <a href="index.html#organiza" class="hover:text-yellow-400 transition">Organiza</a>
           <a href="index.html#contacto" class="hover:text-yellow-400 transition">Contacto</a>
-          <a href="reglasequipos.html#reglas" class="hover:text-yellow-400 transition">Reglas</a>
-                    <a href="reglasequipos.html#equipos" class="hover:text-yellow-400 transition">Equipos</a>
+          <a href="invitados.html" class="hover:text-yellow-400 transition">Invitados</a>
+          <a href="reglas.html" class="hover:text-yellow-400 transition">Reglas</a>
+          <a href="equipos.html" class="hover:text-yellow-400 transition">Equipos</a>
         </div>
       </div>
     </div>
@@ -61,8 +171,9 @@
       <a href="index.html#plano" class="block hover:text-yellow-400">Plano</a>
       <a href="index.html#organiza" class="block hover:text-yellow-400">Organiza</a>
       <a href="index.html#contacto" class="block hover:text-yellow-400">Contacto</a>
-      <a href="reglasequipos.html#reglas" class="block hover:text-yellow-400">Reglas</a>
-      <a href="reglasequipos.html#equipos" class="block hover:text-yellow-400">Equipos</a>
+      <a href="invitados.html" class="block hover:text-yellow-400">Invitados</a>
+      <a href="reglas.html" class="block hover:text-yellow-400">Reglas</a>
+      <a href="equipos.html" class="block hover:text-yellow-400">Equipos</a>
     </div>
   </nav>
 
@@ -75,121 +186,19 @@
     });
   </script>
 
-  <section id="reglas"
-    class="max-w-3xl mx-auto mt-16 p-8 md:p-12 text-center bg-[#4a004a]/40 border-2 border-[#a64ca6] rounded-3xl shadow-[0_0_30px_rgba(166,76,166,0.4)] relative overflow-hidden">
-
-    <h3 class="font-press-start text-lg md:text-2xl text-yellow-400 mb-6 drop-shadow-[0_0_10px_rgba(250,204,21,0.6)]">
-      REGLAS DE LA JAM</h3>
-
-  </section>
-
   <section
-    class="container max-w-5xl mx-auto p-8 md:p-10 mt-16 bg-gray-900/80 border-t-4 border-[#a64ca6] rounded-3xl shadow-[0_-5px_25px_rgba(166,76,166,0.2)]">
-    <div class="flex-1">
-      <p class="mb-4">
-      <h1><strong>SE ACEPTAN SOBORNOS</strong></h1>
-      </p>
-      <p class="mb-4">
-      <h1><strong>Objetivo</strong></h1>
+    class="max-w-3xl mx-auto mt-16 p-6 md:p-2 text-center bg-[#4a004a]/40 border-2 border-[#a64ca6] rounded-3xl shadow-[0_0_30px_rgba(166,76,166,0.4)] relative overflow-hidden">
 
-      La Game Jam consiste en desarrollar un videojuego original en un tiempo limitado cuyo tema central sea los
-      patos. Los participantes deberán crear un juego completo desde cero durante el periodo de la jam.
-      </p>
-
-      <p class="mb-4">
-      <h1><strong>Participación</strong></h1>
-      <ul class="list-disc ml-6 space-y-2 leading-relaxed">
-        <li>La participación puede ser individual o en equipos.</li>
-        <li>Los equipos pueden tener hasta 4 integrantes. Cada participante solo puede formar parte de un único
-          equipo.</li>
-        <li>Todos los miembros del equipo deben estar registrados antes de comenzar la jam.</li>
-      </ul>
-      </p>
-
-      <p class="mb-4">
-      <h1><strong>Desarrollo del juego</strong></h1>
-      <p class="mb-4">
-      <h2><i>Herramientas permitidas:</i></h2>
-      Se permite el uso de cualquier:
-      <ul class="list-disc ml-6 space-y-2 leading-relaxed">
-        <li>Motor de juego (Unity, Unreal, Godot, GameMaker, etc.).</li>
-        <li>Frameworks o librerías externas.</li>
-        <li>Herramientas de desarrollo de cualquier tipo.</li>
-      </ul>
-      </p>
-      <p class="mb-4"></p>
-      <h2><i>Restricciones:</i></h2>
-
-      Para garantizar igualdad entre participantes:
-      <ul class="list-disc ml-6 space-y-2 leading-relaxed">
-        <li>No se permiten assets prehechos (arte, música, sonido, modelos, sprites, etc.).</li>
-        <li>No se permite el uso de IA generativa para crear arte, código, música o cualquier contenido del juego.
-        </li>
-        <li>No se permite reutilizar proyectos anteriores.</li>
-        <li>Todo el contenido del juego debe ser creado durante la jam por el equipo.</li>
-      </ul>
-      </p>
-
-      <p class="mb-4">
-      <h2><i>Requisitos del juego</i></h2>
-
-      Todos los juegos deberán cumplir obligatoriamente:
-      <ul class="list-disc ml-6 space-y-2 leading-relaxed">
-        <li>La temática debe girar en torno a los patos.</li>
-        <li>El juego debe ser jugable en PC.</li>
-        <li>El juego debe estar en idioma español.</li>
-        <li>El juego debe poder ejecutarse sin requerir software adicional complejo.</li>
-      </ul>
-      </p>
-      <p class="mb-4">
-      <h1><strong>Entrega del proyecto</strong></h1>
-      <p class="mb-4">
-        Para que un proyecto sea válido deberá incluir:
-      <ul class="list-disc ml-6 space-y-2 leading-relaxed">
-        <li>La build jugable del juego para PC.</li>
-        <li>Una breve descripción del juego.</li>
-        <li>Instrucciones de control.</li>
-        <li>Nombre del equipo y participantes.</li>
-      </ul>
-      </p>
-      Los proyectos deberán entregarse antes de la fecha límite establecida. <strong>Las entregas fuera de plazo
-        podrán
-        quedar descalificadas.</strong>
-      </p>
-      <p class="mb-4">
-      <h1><strong>Criterios de evaluación</strong></h1>
-
-      <h2><i>Los juegos podrán evaluarse en base a los siguientes criterios:</i></h2>
-      <ul class="list-disc ml-6 space-y-2 leading-relaxed">
-        <li>Uso del tema (<strong>Patos</strong>)</li>
-        <li>Jugabilidad</li>
-        <li>Creatividad / idea</li>
-        <li>Arte y presentación</li>
-        <li>Sonido y música</li>
-        <li>Conducta y juego limpio</li>
-      </ul>
-      </p>
-      <p class="mb-4">
-      <h2><i>No se permitirá:</i></h2>
-      <ul class="list-disc ml-6 space-y-2 leading-relaxed">
-        <li>Plagio de trabajos externos.</li>
-        <li>Uso de contenido con copyright sin permiso.</li>
-        <li>Conductas irrespetuosas hacia otros participantes.</li>
-      </ul>
-      <br>
-      La organización se reserva el derecho de descalificar proyectos que incumplan las normas.
-      </p>
-      <p class="mb-4">
-      <h1><strong>Derechos del juego</strong></h1>
-      Los desarrolladores mantienen la propiedad de sus juegos.
-      Sin embargo, al participar aceptan que el juego pueda mostrarse públicamente como parte del evento.
-    </div>
-    </div>
+    <h3 class="font-press-start text-lg md:text-2xl text-yellow-400 mt-4 mb-4 drop-shadow-[0_0_10px_rgba(250,204,21,0.6)]">
+       EQUIPOS PARTICIPANTES</h3>
+    <p id="contador-equipos" class="text-center text-purple-300 mt-4"></p>
   </section>
+
+  <div id="equipos"></div>
 
   <footer class="mt-20 py-10 border-t-2 border-[#a64ca6] bg-[#4a004a]/80 shadow-[0_-5px_20px_rgba(166,76,166,0.2)]">
     <div class="container mx-auto text-center px-4">
-      <h3 class="font-press-start text-lg text-yellow-400 mb-4 tracking-widest">JAM ATTACK 2</h3>
+      <h3 class="font-press-start text-lg text-yellow-400 mb-4 tracking-widest">JAM ATTACK 3</h3>
       <p class="text-xs text-gray-300 font-mono uppercase tracking-wider">
         © 2026
         <a href="https://arcadebits.es/" target="_blank" rel="noopener"

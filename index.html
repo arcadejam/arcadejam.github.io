@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth scroll-pt-24">
 
 <head>
   <meta charset="UTF-8" />
@@ -9,7 +9,7 @@
   <link rel="icon" type="image/png" href="img/faviconjam.png">
   <meta name="keywords"
     content="Jam Attack, videojuegos indie, programación, Viator, evento, charlas, networking, Arcade Bits, IES Al-Andalus, La Jaquería, Heartbyte Studios, Upware Studios, desarrollo de videojuegos, inscripciones, proyectos, Andalucía">
-  <title>II Jam Attack - 14 de Junio de 2026</title>
+  <title>Jam Attack 3 - 12 de Junio de 2026</title>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -24,15 +24,34 @@
         padding-right: 1em;
       }
     }
+
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-35px);
+      }
+    }
+
+    .animate-float {
+      animation: float 2.5s ease-in-out infinite;
+    }
   </style>
 </head>
 
-<body class="bg-gradient-to-br from-gray-900 to-[#4a004a]/40 text-gray-100 font-sans leading-relaxed min-h-screen relative">
+<body
+  class="bg-gradient-to-br from-gray-900 to-[#4a004a]/40 text-gray-100 font-sans leading-relaxed min-h-screen relative">
 
-  <nav class="bg-[#4a004a]/90 border-b border-[#a64ca6] text-white shadow-[0_4px_15px_rgba(166,76,166,0.3)] sticky top-0 z-50 backdrop-blur-sm">
+  <nav
+    class="bg-[#4a004a]/90 border-b border-[#a64ca6] text-white shadow-[0_4px_15px_rgba(166,76,166,0.3)] sticky top-0 z-50 backdrop-blur-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-16">
-        <div class="flex-shrink-0 text-lg font-bold font-press-start text-yellow-400 text-xs md:text-sm">Jam Attack 2</div>
+        <div class="flex-shrink-0 text-lg font-bold font-press-start text-yellow-400 text-xs md:text-sm">Jam Attack 3
+        </div>
         <div class="md:hidden">
           <button id="menu-toggle" class="text-white focus:outline-none focus:ring-2 focus:ring-[#a64ca6]">
             <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
@@ -45,11 +64,11 @@
           <a href="#home" class="hover:text-yellow-400 transition">Home</a>
           <a href="#horario" class="hover:text-yellow-400 transition">Programa</a>
           <a href="#plano" class="hover:text-yellow-400 transition">Plano</a>
-          <a href="#inscripcion" class="hover:text-yellow-400 transition">Inscripción</a>
           <a href="#organiza" class="hover:text-yellow-400 transition">Organiza</a>
-          <a href="#equipos" class="hover:text-yellow-400 transition">Equipos</a>
-          <a href="#reglas" class="hover:text-yellow-400 transition">Reglas</a>
           <a href="#contacto" class="hover:text-yellow-400 transition">Contacto</a>
+          <a href="invitados.html" class="hover:text-yellow-400 transition">Invitados</a>
+          <a href="reglas.html" class="hover:text-yellow-400 transition">Reglas</a>
+          <a href="equipos.html" class="hover:text-yellow-400 transition">Equipos</a>
         </div>
       </div>
     </div>
@@ -57,11 +76,12 @@
       <a href="#home" class="block hover:text-yellow-400">Home</a>
       <a href="#horario" class="block hover:text-yellow-400">Programa</a>
       <a href="#plano" class="block hover:text-yellow-400">Plano</a>
-      <a href="#inscripcion" class="block hover:text-yellow-400">Inscripción</a>
       <a href="#organiza" class="block hover:text-yellow-400">Organiza</a>
-      <a href="#equipos" class="block hover:text-yellow-400">Equipos</a>
-      <a href="#reglas" class="block hover:text-yellow-400">Reglas</a>
       <a href="#contacto" class="block hover:text-yellow-400">Contacto</a>
+      <a href="invitados.html" class="block hover:text-yellow-400">Invitados</a>
+      <a href="reglas.html" class="block hover:text-yellow-400">Reglas</a>
+      <a href="equipos.html" class="block hover:text-yellow-400">Equipos</a>
+
     </div>
   </nav>
 
@@ -74,46 +94,65 @@
     });
   </script>
 
-  <header id="home" class="container max-w-6xl mx-auto p-8 md:p-10 flex flex-col lg:flex-row items-center justify-between gap-12 mt-8">
-    
+  <header id="home"
+    class="container max-w-6xl mx-auto p-8 md:p-10 flex flex-col lg:flex-row items-center justify-between gap-12 mt-8">
+
     <div class="flex flex-col items-center lg:items-start text-center lg:text-left">
       <div class="flex flex-col md:flex-row items-center gap-8">
-        
-        <div class="w-32 h-32 flex shrink-0 items-center justify-center border-4 border-dashed border-[#a64ca6] rounded-full shadow-[0_0_20px_rgba(166,76,166,0.6)]">
+
+        <div
+          class="w-32 h-32 flex shrink-0 items-center justify-center border-4 border-dashed border-[#a64ca6] rounded-full shadow-[0_0_20px_rgba(166,76,166,0.6)] animate-float">
           <span class="text-6xl">👾</span>
         </div>
-        
+
         <div class="flex flex-col items-center lg:items-start w-full">
-          <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tighter text-[#a64ca6] font-press-start leading-tight mb-4 drop-shadow-[0_0_10px_rgba(166,76,166,0.5)]">
-            JAM <br><span class="text-white">ATTACK 2</span>
+          <h1
+            class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tighter text-[#a64ca6] font-press-start leading-tight mb-4 drop-shadow-[0_0_10px_rgba(166,76,166,0.5)]">
+            JAM <br><span class="text-white">ATTACK 3</span>
           </h1>
-          <p class="text-xl md:text-2xl font-semibold text-yellow-400 mb-8">14 DE JUNIO DE 2026</p>
-          
+          <p class="text-xl md:text-2xl font-semibold text-yellow-400 mb-8">12 DE JUNIO DE 2026</p>
+
           <div class="w-full flex justify-center lg:justify-center lg:pr-8">
-            <a href="#" class="inline-block bg-[#a64ca6] text-white font-press-start text-[10px] md:text-xs py-4 px-8 rounded-lg hover:bg-yellow-400 hover:text-[#4a004a] hover:-translate-y-1 transition-all duration-300 shadow-[0_4px_0_#4a004a] hover:shadow-[0_6px_0_#4a004a]">
-              Compra tu Entrada
+            <a href="#"
+              class="inline-block bg-[#a64ca6] text-white font-press-start text-[10px] md:text-xs py-4 px-8 rounded-lg hover:bg-yellow-400 hover:text-[#4a004a] hover:-translate-y-1 transition-all duration-300 shadow-[0_4px_0_#4a004a] hover:shadow-[0_6px_0_#4a004a]">
+              Inscríbete Ahora
             </a>
           </div>
         </div>
-
       </div>
     </div>
 
-    <div class="flex flex-col items-center gap-6 w-full max-w-[350px]">
-      
-      <div class="w-full bg-gray-900/95 py-4 px-6 rounded-xl flex justify-center items-center gap-6 border-2 border-[#a64ca6] shadow-[0_0_15px_rgba(166,76,166,0.5)] backdrop-blur-md">
+    <div class="flex flex-col items-center gap-6 w-full max-w-[380px]">
+      <div
+        class="w-full bg-gray-900/95 py-3 px-3 md:py-4 md:px-5 rounded-xl flex justify-center items-center gap-2 md:gap-3 border-2 border-[#a64ca6] shadow-[0_0_15px_rgba(166,76,166,0.5)] backdrop-blur-md">
+
         <div class="flex flex-col text-center">
-          <span class="text-3xl font-bold text-white">90</span>
-          <span class="text-[10px] uppercase text-[#a64ca6] font-press-start mt-1">Días</span>
+          <span id="days" class="text-xl md:text-2xl font-bold text-white">00</span>
+          <span class="text-[7px] md:text-[9px] uppercase text-[#a64ca6] font-press-start mt-1">Días</span>
         </div>
-        <div class="text-3xl font-bold text-[#a64ca6] pb-4">:</div>
+        <div class="text-xl md:text-2xl font-bold text-[#a64ca6] pb-2 md:pb-4">:</div>
+
         <div class="flex flex-col text-center">
-          <span class="text-3xl font-bold text-white">12</span>
-          <span class="text-[10px] uppercase text-[#a64ca6] font-press-start mt-1">Hrs</span>
+          <span id="hours" class="text-xl md:text-2xl font-bold text-white">00</span>
+          <span class="text-[7px] md:text-[9px] uppercase text-[#a64ca6] font-press-start mt-1">Hrs</span>
         </div>
+        <div class="text-xl md:text-2xl font-bold text-[#a64ca6] pb-2 md:pb-4">:</div>
+
+        <div class="flex flex-col text-center">
+          <span id="minutes" class="text-xl md:text-2xl font-bold text-white">00</span>
+          <span class="text-[7px] md:text-[9px] uppercase text-[#a64ca6] font-press-start mt-1">Min</span>
+        </div>
+        <div class="text-xl md:text-2xl font-bold text-[#a64ca6] pb-2 md:pb-4">:</div>
+
+        <div class="flex flex-col text-center">
+          <span id="seconds" class="text-xl md:text-2xl font-bold text-white">00</span>
+          <span class="text-[7px] md:text-[9px] uppercase text-[#a64ca6] font-press-start mt-1">Seg</span>
+        </div>
+
       </div>
 
-      <img src="img/cartel.jpg" alt="Cartel del evento" class="w-full object-cover rounded-xl shadow-[0_0_25px_rgba(166,76,166,0.8)] opacity-90 border-2 border-[#a64ca6]" />
+      <img src="img/cartel.jpg" alt="Cartel del evento"
+        class="w-full object-cover rounded-xl shadow-[0_0_25px_rgba(166,76,166,0.8)] opacity-90 border-2 border-[#a64ca6]" />
     </div>
   </header>
 
@@ -121,9 +160,11 @@
     class="max-w-4xl mx-auto bg-gray-900/80 border-2 border-[#a64ca6] p-6 rounded-2xl mt-16 shadow-[0_0_20px_rgba(166,76,166,0.2)] backdrop-blur-sm">
     <div class="flex flex-col md:flex-row items-center gap-6">
       <div class="flex-1 text-gray-200">
-        Este evento único se llevará a cabo el <strong class="text-yellow-400">14 de junio</strong> de <strong class="text-yellow-400">11:00 a 14:00</strong> y
-        <strong class="text-yellow-400">17:00 a 20:00</strong> en la
-        <a href="https://maps.app.goo.gl/Tt5JT6M7oHGuxsg58" target="_blank" class="text-[#a64ca6] hover:text-[#ff7eff] hover:underline font-bold transition-colors">
+        Este evento único se llevará a cabo el <strong class="text-yellow-400">12 de junio</strong> de 17:00 a 19:00, el
+        <strong class="text-yellow-400">13 de junio</strong> de 09:00 a 21:00 y el <strong class="text-yellow-400">14 de
+          junio</strong> desde las 10:00 en la
+        <a href="https://maps.app.goo.gl/Tt5JT6M7oHGuxsg58" target="_blank"
+          class="text-[#a64ca6] hover:text-[#ff7eff] hover:underline font-bold transition-colors">
           Casa de la Cultura
         </a> en Viator. 🎮
         <br><br>
@@ -131,14 +172,18 @@
           Ayuntamiento de Viator</strong>, que aportarán su conocimiento y pasión por el desarrollo de videojuegos. 🕹️
         <br><br>
         Además, tendremos el honor de recibir a invitados especiales como <strong>Don Aitor</strong>, creador de <em>Rap
-          Attack</em>; <strong>Heartbyte Studios</strong>, creadores de <em>Mind Corridors</em>; y <strong>Hilarion Luque</strong> de
+          Attack</em>; <strong>Heartbyte Studios</strong>, creadores de <em>Mind Corridors</em>; y <strong>Hilarion
+          Luque</strong> de
         <em>Upware Studios</em>.
       </div>
-      <img src="img/JA-PJ_480x480.png" alt="Logo evento" class="w-[150px] md:ml-6 drop-shadow-[0_0_15px_rgba(166,76,166,0.6)]">
+      <img src="img/JA-PJ_480x480.png" alt="Logo evento"
+        class="w-[150px] md:ml-6 drop-shadow-[0_0_15px_rgba(166,76,166,0.6)]">
     </div>
 
     <div class="mt-10" id="horario">
-      <h3 class="font-press-start text-sm md:text-base text-[#a64ca6] mb-6 text-center drop-shadow-[0_0_5px_rgba(166,76,166,0.8)]">Horario del Evento</h3>
+      <h3
+        class="font-press-start text-sm md:text-base text-yellow-400 mb-6 text-center drop-shadow-[0_0_8px_rgba(250,204,21,0.6)]">
+        Horario del Evento</h3>
       <div class="overflow-x-auto rounded-lg border border-[#a64ca6] shadow-lg">
         <table class="min-w-full bg-gray-900 text-gray-200">
           <thead>
@@ -148,68 +193,94 @@
             </tr>
           </thead>
           <tbody class="divide-y divide-gray-700">
+
             <tr>
-              <td class="px-3 py-2 font-bold text-yellow-400 bg-[#4a004a]/60 text-center" colspan="2">Mañana (11:00 - 14:00)</td>
+              <td class="px-3 py-2 font-bold text-yellow-400 bg-[#4a004a]/60 text-center uppercase tracking-widest"
+                colspan="2">12 de Junio</td>
             </tr>
             <tr class="hover:bg-gray-800 transition">
-              <td class="px-3 py-3 w-40 text-center font-mono">11:00 - 11:15</td>
-              <td class="px-4 py-3">Recepción y bienvenida</td>
+              <td class="px-3 py-3 w-40 text-center font-mono">17:00 - 17:30</td>
+              <td class="px-4 py-3">Apertura y presentación.</td>
             </tr>
             <tr class="hover:bg-gray-800 transition">
-              <td class="px-3 py-3 w-40 text-center font-mono">11:15 - 12:00</td>
-              <td class="px-4 py-3"><span class="text-[#a64ca6] font-bold">Minds Corridors</span> - Cómo hacer que un juego dé miedo.</td>
+              <td class="px-3 py-3 w-40 text-center font-mono">17:30 - 18:00</td>
+              <td class="px-4 py-3"><span class="text-[#a64ca6] font-bold">IES Al-Andalus</span> - Presentación Curso de
+                especialización.</td>
             </tr>
             <tr class="hover:bg-gray-800 transition">
-              <td class="px-3 py-3 w-40 text-center font-mono">12:00 - 12:15</td>
-              <td class="px-4 py-3"><span class="text-[#a64ca6] font-bold">IES Al-Andalus</span> - Presentación del profesorado y Cursos de especialización.</td>
+              <td class="px-3 py-3 w-40 text-center font-mono">18:00 - 18:45</td>
+              <td class="px-4 py-3">Presentación de proyectos y demos por parte del IES Al-Ándalus.</td>
             </tr>
             <tr class="hover:bg-gray-800 transition">
-              <td class="px-3 py-3 w-40 text-center font-mono">12:15 - 13:00</td>
-              <td class="px-4 py-3">Presentación de proyectos y demos por parte del alumnado del IES Al-Andalus.</td>
-            </tr>
-            <tr class="hover:bg-gray-800 transition">
-              <td class="px-3 py-3 w-40 text-center font-mono">13:00 - 13:45</td>
-              <td class="px-4 py-3"><span class="text-[#a64ca6] font-bold">Upware Studios</span> - La disrupción de la IA en el sector del videojuego.</td>
+              <td class="px-3 py-3 w-40 text-center font-mono">19:00</td>
+              <td class="px-4 py-3">Cierre.</td>
             </tr>
 
             <tr>
-              <td class="px-4 py-2 font-bold text-yellow-400 bg-[#4a004a]/60 text-center" colspan="2">Tarde (17:00 - 20:00)</td>
+              <td class="px-4 py-2 font-bold text-yellow-400 bg-[#4a004a]/60 text-center uppercase tracking-widest"
+                colspan="2">13 de Junio</td>
             </tr>
             <tr class="hover:bg-gray-800 transition">
-              <td class="px-3 py-4 w-40 text-center font-mono">17:00 - 20:00</td>
-              <td class="px-4 py-4">Presentación de proyectos de juegos realizados por alumnos y desarrolladores independientes.</td>
+              <td class="px-3 py-4 w-40 text-center font-mono">09:00 - 21:00</td>
+              <td class="px-4 py-4">Creación del juego "trabajo".</td>
             </tr>
+
+            <tr>
+              <td class="px-4 py-2 font-bold text-yellow-400 bg-[#4a004a]/60 text-center uppercase tracking-widest"
+                colspan="2">14 de Junio</td>
+            </tr>
+            <tr class="hover:bg-gray-800 transition">
+              <td class="px-3 py-4 w-40 text-center font-mono">10:00 - 10:30</td>
+              <td class="px-4 py-4 text-pink-400 font-bold">Entrega de proyectos, fecha límite.</td>
+            </tr>
+            <tr class="hover:bg-gray-800 transition">
+              <td class="px-3 py-4 w-40 text-center font-mono">10:30</td>
+              <td class="px-4 py-4">Presentación de proyectos de la Jam.</td>
+            </tr>
+
           </tbody>
         </table>
       </div>
     </div>
   </section>
 
-  <section id="plano" class="max-w-4xl mx-auto mt-16 p-6 border-2 border-[#a64ca6] bg-gray-900/60 rounded-2xl shadow-[0_0_20px_rgba(166,76,166,0.2)]">
-    <h3 class="font-press-start text-sm md:text-base text-[#a64ca6] mb-6 text-center drop-shadow-[0_0_5px_rgba(166,76,166,0.8)]">Plano del evento</h3>
+  <section id="plano"
+    class="max-w-4xl mx-auto mt-16 p-6 border-2 border-[#a64ca6] bg-gray-900/60 rounded-2xl shadow-[0_0_20px_rgba(166,76,166,0.2)]">
+    <h3
+      class="font-press-start text-sm md:text-base text-yellow-400 mb-6 text-center drop-shadow-[0_0_8px_rgba(250,204,21,0.6)]">
+      Plano del evento</h3>
     <div class="text-base text-gray-300">
-      <img src="img/Plano.png" alt="Plano del evento" class="w-full h-auto rounded-lg border border-[#4a004a] shadow-md mb-4 bg-white/5 p-2">
+      <img src="img/Plano.png" alt="Plano del evento"
+        class="w-full h-auto rounded-lg border border-[#4a004a] shadow-md mb-4 bg-white/5 p-2">
       <p class="mt-6 mb-4 text-center">Aquí puedes encontrar el plano del lugar. En cada sala podrás encontrar:</p>
-      
+
       <ul class="list-none grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-center">
-        <li class="bg-[#4a004a]/40 p-4 rounded-lg border border-[#a64ca6]/50 hover:border-[#a64ca6] transition-colors"><strong class="text-yellow-400 block mb-2 font-press-start text-[10px]">Presentaciones</strong> Proyectos y demos para probar nuevos desarrollos.</li>
-        <li class="bg-[#4a004a]/40 p-4 rounded-lg border border-[#a64ca6]/50 hover:border-[#a64ca6] transition-colors"><strong class="text-yellow-400 block mb-2 font-press-start text-[10px]">Freeplay Indie</strong> Juega para probar juegos independientes y conocidos.</li>
-        <li class="bg-[#4a004a]/40 p-4 rounded-lg border border-[#a64ca6]/50 hover:border-[#a64ca6] transition-colors"><strong class="text-yellow-400 block mb-2 font-press-start text-[10px]">Conferencias</strong> Charlas de profesionales y alumnos de los centros.</li>
+        <li class="bg-[#4a004a]/40 p-4 rounded-lg border border-[#a64ca6]/50 hover:border-[#a64ca6] transition-colors">
+          <strong class="text-yellow-400 block mb-2 font-press-start text-[10px]">Presentaciones</strong> Proyectos y
+          demos para probar nuevos desarrollos.</li>
+        <li class="bg-[#4a004a]/40 p-4 rounded-lg border border-[#a64ca6]/50 hover:border-[#a64ca6] transition-colors">
+          <strong class="text-yellow-400 block mb-2 font-press-start text-[10px]">Freeplay Indie</strong> Juega para
+          probar juegos independientes y conocidos.</li>
+        <li class="bg-[#4a004a]/40 p-4 rounded-lg border border-[#a64ca6]/50 hover:border-[#a64ca6] transition-colors">
+          <strong class="text-yellow-400 block mb-2 font-press-start text-[10px]">Conferencias</strong> Charlas de
+          profesionales y alumnos de los centros.</li>
       </ul>
     </div>
 
     <div class="mt-10">
-      <h4 class="text-[#a64ca6] font-press-start text-xs md:text-sm mb-4 text-center">Cómo llegar</h4>
+      <h4
+        class="text-yellow-400 font-press-start text-xs md:text-sm mb-4 text-center drop-shadow-[0_0_8px_rgba(250,204,21,0.6)]">
+        Cómo llegar</h4>
       <p class="text-base text-center mb-6 text-gray-300">
-        El evento se llevará a cabo en la <span class="font-bold text-white">Casa de la Cultura</span>, ubicado en 
-        <a href="https://maps.app.goo.gl/x1BiqpQvCTVr6pQMA" class="text-yellow-400 hover:text-white hover:underline block mt-2 transition-colors">
+        El evento se llevará a cabo en la <span class="font-bold text-white">Casa de la Cultura</span>, ubicado en
+        <a href="https://maps.app.goo.gl/x1BiqpQvCTVr6pQMA"
+          class="text-yellow-400 hover:text-white hover:underline block mt-2 transition-colors">
           Calle Pte., 4, 04240 Viator, Almería.
         </a>
       </p>
-      <div class="w-full h-72 rounded-lg overflow-hidden shadow-[0_0_15px_rgba(166,76,166,0.2)] border border-[#a64ca6]">
-        <iframe
-          class="w-full h-full border-0 grayscale hover:grayscale-0 transition-all duration-500"
-          loading="lazy"
+      <div
+        class="w-full h-72 rounded-lg overflow-hidden shadow-[0_0_15px_rgba(166,76,166,0.2)] border border-[#a64ca6]">
+        <iframe class="w-full h-full border-0 grayscale hover:grayscale-0 transition-all duration-500" loading="lazy"
           allowfullscreen
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3191.1693828915013!2d-2.4258478889422785!3d36.88629596272622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7a9f9df5c999c1%3A0xae9e4e9290cf1f54!2sCasa%20de%20Cultura!5e0!3m2!1ses!2ses!4v1749134422962!5m2!1ses!2ses">
         </iframe>
@@ -217,60 +288,80 @@
     </div>
   </section>
 
-  <section id="organiza" class="container max-w-5xl mx-auto p-8 md:p-10 mt-16 bg-gray-900/80 border-t-4 border-[#a64ca6] rounded-3xl shadow-[0_-5px_25px_rgba(166,76,166,0.2)]">
-    
-    <h3 class="font-press-start text-sm md:text-base text-[#a64ca6] mb-8 text-center drop-shadow-[0_0_5px_rgba(166,76,166,0.8)]">ORGANIZA</h3>
+  <section id="organiza"
+    class="container max-w-5xl mx-auto p-8 md:p-10 mt-16 bg-gray-900/80 border-t-4 border-[#a64ca6] rounded-3xl shadow-[0_-5px_25px_rgba(166,76,166,0.2)]">
+
+    <h3
+      class="font-press-start text-sm md:text-base text-yellow-400 mb-8 text-center drop-shadow-[0_0_8px_rgba(250,204,21,0.6)]">
+      ORGANIZA</h3>
     <div class="flex justify-center mb-16">
-      <div class="w-72 h-32 bg-[#4a004a]/30 rounded-xl flex items-center justify-center shadow-[0_0_15px_rgba(166,76,166,0.3)] hover:scale-105 transition-transform border border-[#a64ca6] p-4 hover:bg-[#4a004a]/60">
+      <div
+        class="w-72 h-32 bg-white rounded-2xl flex items-center justify-center shadow-[0_0_15px_rgba(166,76,166,0.4)] hover:scale-105 hover:shadow-[0_0_25px_rgba(166,76,166,0.7)] transition-all border-4 border-[#a64ca6] p-4">
         <a href="https://arcadebits.es/" title="Arcade Bits" target="_blank" rel="noopener">
-          <img src="img/logoarcade.png" alt="Arcade Bits" class="max-h-20 object-contain drop-shadow-[0_0_5px_rgba(255,255,255,0.5)]" />
+          <img src="img/logoarcade.png" alt="Arcade Bits" class="max-h-20 object-contain" />
         </a>
       </div>
     </div>
 
-    <h4 class="font-press-start text-xs md:text-sm text-yellow-400 mb-8 text-center">COLABORA</h4>
+    <h4
+      class="font-press-start text-xs md:text-sm text-yellow-400 mb-8 text-center drop-shadow-[0_0_8px_rgba(250,204,21,0.6)]">
+      COLABORA</h4>
     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6">
-      <div class="w-full h-28 bg-[#4a004a]/20 backdrop-blur-sm rounded-xl flex items-center justify-center shadow-lg hover:bg-[#4a004a]/50 hover:-translate-y-2 transition-all border border-[#a64ca6]/50 hover:border-[#a64ca6] p-4">
-        <a href="https://viator.es/" title="Ayuntamiento de Viator" target="_blank" rel="noopener" class="w-full h-full flex items-center justify-center">
+      <div
+        class="w-full h-28 bg-white rounded-xl flex items-center justify-center shadow-[0_0_10px_rgba(166,76,166,0.2)] hover:shadow-[0_0_20px_rgba(166,76,166,0.5)] hover:-translate-y-2 transition-all border-2 border-[#a64ca6] p-4">
+        <a href="https://viator.es/" title="Ayuntamiento de Viator" target="_blank" rel="noopener"
+          class="w-full h-full flex items-center justify-center">
           <img src="img/AyuViator.png" alt="Ayuntamiento de Viator" class="max-h-full max-w-full object-contain" />
         </a>
       </div>
-      <div class="w-full h-28 bg-[#4a004a]/20 backdrop-blur-sm rounded-xl flex items-center justify-center shadow-lg hover:bg-[#4a004a]/50 hover:-translate-y-2 transition-all border border-[#a64ca6]/50 hover:border-[#a64ca6] p-4">
-        <a href="https://lajaqueria.com/" title="La Jaquería" target="_blank" rel="noopener" class="w-full h-full flex items-center justify-center">
+      <div
+        class="w-full h-28 bg-white rounded-xl flex items-center justify-center shadow-[0_0_10px_rgba(166,76,166,0.2)] hover:shadow-[0_0_20px_rgba(166,76,166,0.5)] hover:-translate-y-2 transition-all border-2 border-[#a64ca6] p-4">
+        <a href="https://lajaqueria.com/" title="La Jaquería" target="_blank" rel="noopener"
+          class="w-full h-full flex items-center justify-center">
           <img src="img/jaqueria.png" alt="La Jaquería" class="max-h-full max-w-full object-contain" />
         </a>
       </div>
-      <div class="w-full h-28 bg-[#4a004a]/20 backdrop-blur-sm rounded-xl flex items-center justify-center shadow-lg hover:bg-[#4a004a]/50 hover:-translate-y-2 transition-all border border-[#a64ca6]/50 hover:border-[#a64ca6] p-4">
-        <a href="https://iesalandalus.org/" title="IES Al-Andalus" target="_blank" rel="noopener" class="w-full h-full flex items-center justify-center">
+      <div
+        class="w-full h-28 bg-white rounded-xl flex items-center justify-center shadow-[0_0_10px_rgba(166,76,166,0.2)] hover:shadow-[0_0_20px_rgba(166,76,166,0.5)] hover:-translate-y-2 transition-all border-2 border-[#a64ca6] p-4">
+        <a href="https://iesalandalus.org/" title="IES Al-Andalus" target="_blank" rel="noopener"
+          class="w-full h-full flex items-center justify-center">
           <img src="img/logoies.png" alt="IES Al-Andalus" class="max-h-full max-w-full object-contain" />
         </a>
       </div>
-      <div class="w-full h-28 bg-[#4a004a]/20 backdrop-blur-sm rounded-xl flex items-center justify-center shadow-lg hover:bg-[#4a004a]/50 hover:-translate-y-2 transition-all border border-[#a64ca6]/50 hover:border-[#a64ca6] p-4">
-        <a href="https://upwarestudios.com/" title="Upware Studios" target="_blank" rel="noopener" class="w-full h-full flex items-center justify-center">
+      <div
+        class="w-full h-28 bg-white rounded-xl flex items-center justify-center shadow-[0_0_10px_rgba(166,76,166,0.2)] hover:shadow-[0_0_20px_rgba(166,76,166,0.5)] hover:-translate-y-2 transition-all border-2 border-[#a64ca6] p-4">
+        <a href="https://upwarestudios.com/" title="Upware Studios" target="_blank" rel="noopener"
+          class="w-full h-full flex items-center justify-center">
           <img src="img/upware.jpeg" alt="Upware Studios" class="max-h-full max-w-full object-contain rounded" />
         </a>
       </div>
-      <div class="w-full h-28 bg-[#4a004a]/20 backdrop-blur-sm rounded-xl flex items-center justify-center shadow-lg hover:bg-[#4a004a]/50 hover:-translate-y-2 transition-all border border-[#a64ca6]/50 hover:border-[#a64ca6] p-4">
-        <a href="https://x.com/heartbytestudio" title="Heartbyte Studio" target="_blank" rel="noopener" class="w-full h-full flex items-center justify-center">
+      <div
+        class="w-full h-28 bg-white rounded-xl flex items-center justify-center shadow-[0_0_10px_rgba(166,76,166,0.2)] hover:shadow-[0_0_20px_rgba(166,76,166,0.5)] hover:-translate-y-2 transition-all border-2 border-[#a64ca6] p-4">
+        <a href="https://x.com/heartbytestudio" title="Heartbyte Studio" target="_blank" rel="noopener"
+          class="w-full h-full flex items-center justify-center">
           <img src="img/heartbytestudios.png" alt="Heartbyte Studios" class="max-h-full max-w-full object-contain" />
         </a>
       </div>
-      <div class="w-full h-28 bg-[#4a004a]/20 backdrop-blur-sm rounded-xl flex items-center justify-center shadow-lg hover:bg-[#4a004a]/50 hover:-translate-y-2 transition-all border border-[#a64ca6]/50 hover:border-[#a64ca6] p-4">
-        <a href="https://www.twitch.tv/makeclassicgames/" title="Make Classic Games" target="_blank" rel="noopener" class="w-full h-full flex items-center justify-center">
+      <div
+        class="w-full h-28 bg-white rounded-xl flex items-center justify-center shadow-[0_0_10px_rgba(166,76,166,0.2)] hover:shadow-[0_0_20px_rgba(166,76,166,0.5)] hover:-translate-y-2 transition-all border-2 border-[#a64ca6] p-4">
+        <a href="https://www.twitch.tv/makeclassicgames/" title="Make Classic Games" target="_blank" rel="noopener"
+          class="w-full h-full flex items-center justify-center">
           <img src="img/mkg.png" alt="Make Classic Games" class="max-h-full max-w-full object-contain" />
         </a>
       </div>
     </div>
   </section>
 
-  <section id="contacto" class="max-w-3xl mx-auto mt-16 p-8 md:p-12 text-center bg-[#4a004a]/40 border-2 border-[#a64ca6] rounded-3xl shadow-[0_0_30px_rgba(166,76,166,0.4)] relative overflow-hidden">
-    
-    <h3 class="font-press-start text-lg md:text-2xl text-yellow-400 mb-6 drop-shadow-[0_0_10px_rgba(250,204,21,0.6)]">CONTACTO</h3>
-    
+  <section id="contacto"
+    class="max-w-3xl mx-auto mt-16 p-8 md:p-12 text-center bg-[#4a004a]/40 border-2 border-[#a64ca6] rounded-3xl shadow-[0_0_30px_rgba(166,76,166,0.4)] relative overflow-hidden">
+
+    <h3 class="font-press-start text-lg md:text-2xl text-yellow-400 mb-6 drop-shadow-[0_0_10px_rgba(250,204,21,0.6)]">
+      CONTACTO</h3>
+
     <p class="mb-10 text-lg text-gray-200">
       Si tienes alguna pregunta o necesitas más información, ponte en contacto con nosotros:
     </p>
-    
+
     <div class="flex justify-center mb-12">
       <a title="Formulario de Contacto" target="_blank" href="https://arcadebits.es/pages/contacto"
         class="inline-block bg-[#a64ca6] text-white font-press-start text-[10px] md:text-sm py-5 px-8 rounded-xl hover:bg-yellow-400 hover:text-[#4a004a] hover:-translate-y-1 transition-all duration-300 shadow-[0_5px_0_#4a004a] hover:shadow-[0_8px_0_#4a004a]">
@@ -279,19 +370,21 @@
     </div>
 
     <hr class="border-gray-700/50 mb-8 w-2/3 mx-auto">
-    
+
     <p class="mb-6 text-gray-400 text-sm font-semibold uppercase tracking-widest">
       Síguenos en nuestras redes sociales:
     </p>
-    
-    <div class="flex justify-center gap-8 bg-gray-900/60 p-5 rounded-full inline-flex mx-auto border border-[#a64ca6] shadow-[0_0_15px_rgba(166,76,166,0.2)]">
+
+    <div
+      class="flex justify-center gap-8 bg-gray-900/60 p-5 rounded-full inline-flex mx-auto border border-[#a64ca6] shadow-[0_0_15px_rgba(166,76,166,0.2)]">
       <a href="https://x.com/arcadebits" title="x(Twitter)" target="_blank" rel="noopener" aria-label="X (Twitter)">
         <img src="img/xlogo.webp" alt="X (Twitter)" class="h-8 w-8 hover:scale-125 transition-transform" />
       </a>
       <a href="https://facebook.com/arcadebits" title="Facebook" target="_blank" rel="noopener" aria-label="Facebook">
         <img src="img/facebooklogo.png" alt="Facebook" class="h-8 w-8 hover:scale-125 transition-transform" />
       </a>
-      <a href="https://instagram.com/arcadebits" title="Instagram" target="_blank" rel="noopener" aria-label="Instagram">
+      <a href="https://instagram.com/arcadebits" title="Instagram" target="_blank" rel="noopener"
+        aria-label="Instagram">
         <img src="img/instagram.webp" alt="Instagram" class="h-8 w-8 hover:scale-125 transition-transform" />
       </a>
     </div>
@@ -299,35 +392,81 @@
 
   <footer class="mt-20 py-10 border-t-2 border-[#a64ca6] bg-[#4a004a]/80 shadow-[0_-5px_20px_rgba(166,76,166,0.2)]">
     <div class="container mx-auto text-center px-4">
-      <h3 class="font-press-start text-lg text-yellow-400 mb-4 tracking-widest">JAM ATTACK 2</h3>
+      <h3 class="font-press-start text-lg text-yellow-400 mb-4 tracking-widest">JAM ATTACK 3</h3>
       <p class="text-xs text-gray-300 font-mono uppercase tracking-wider">
-        © 2026 
-        <a href="https://arcadebits.es/" target="_blank" rel="noopener" class="text-[#a64ca6] font-bold hover:text-white transition-colors">
+        © 2026
+        <a href="https://arcadebits.es/" target="_blank" rel="noopener"
+          class="text-[#a64ca6] font-bold hover:text-white transition-colors">
           Arcade Bits
-        </a>. 
+        </a>.
         Todos los derechos reservados.
       </p>
     </div>
   </footer>
 
   <div class="fixed bottom-4 right-4 md:bottom-6 md:right-6 flex flex-col gap-1 md:gap-2 z-50">
-      
-      <a href="https://x.com/arcadebits" title="X (Twitter)" target="_blank" rel="noopener" aria-label="X (Twitter)" 
-        class="bg-gray-900/80 p-2 md:p-3 rounded-full border border-[#a64ca6] shadow-[0_0_10px_rgba(166,76,166,0.3)] hover:scale-110 hover:shadow-[0_0_15px_rgba(166,76,166,0.6)] transition-all duration-300 flex items-center justify-center">
-        <img src="img/xlogo.webp" alt="X (Twitter)" class="h-5 w-5 md:h-8 md:w-8 object-contain" />
-      </a>
-      
-      <a href="https://facebook.com/arcadebits" title="Facebook" target="_blank" rel="noopener" aria-label="Facebook" 
-        class="bg-gray-900/80 p-2 md:p-3 rounded-full border border-[#a64ca6] shadow-[0_0_10px_rgba(166,76,166,0.3)] hover:scale-110 hover:shadow-[0_0_15px_rgba(166,76,166,0.6)] transition-all duration-300 flex items-center justify-center">
-        <img src="img/facebooklogo.png" alt="Facebook" class="h-5 w-5 md:h-8 md:w-8 object-contain" />
-      </a>
-      
-      <a href="https://instagram.com/arcadebits" title="Instagram" target="_blank" rel="noopener" aria-label="Instagram" 
-        class="bg-gray-900/80 p-2 md:p-3 rounded-full border border-[#a64ca6] shadow-[0_0_10px_rgba(166,76,166,0.3)] hover:scale-110 hover:shadow-[0_0_15px_rgba(166,76,166,0.6)] transition-all duration-300 flex items-center justify-center">
-        <img src="img/instagram.webp" alt="Instagram" class="h-5 w-5 md:h-8 md:w-8 object-contain" />
-      </a>
-      
+
+    <a href="https://x.com/arcadebits" title="X (Twitter)" target="_blank" rel="noopener" aria-label="X (Twitter)"
+      class="bg-gray-900/80 p-2 md:p-3 rounded-full border border-[#a64ca6] shadow-[0_0_10px_rgba(166,76,166,0.3)] hover:scale-110 hover:shadow-[0_0_15px_rgba(166,76,166,0.6)] transition-all duration-300 flex items-center justify-center">
+      <img src="img/xlogo.webp" alt="X (Twitter)" class="h-5 w-5 md:h-8 md:w-8 object-contain" />
+    </a>
+
+    <a href="https://facebook.com/arcadebits" title="Facebook" target="_blank" rel="noopener" aria-label="Facebook"
+      class="bg-gray-900/80 p-2 md:p-3 rounded-full border border-[#a64ca6] shadow-[0_0_10px_rgba(166,76,166,0.3)] hover:scale-110 hover:shadow-[0_0_15px_rgba(166,76,166,0.6)] transition-all duration-300 flex items-center justify-center">
+      <img src="img/facebooklogo.png" alt="Facebook" class="h-5 w-5 md:h-8 md:w-8 object-contain" />
+    </a>
+
+    <a href="https://instagram.com/arcadebits" title="Instagram" target="_blank" rel="noopener" aria-label="Instagram"
+      class="bg-gray-900/80 p-2 md:p-3 rounded-full border border-[#a64ca6] shadow-[0_0_10px_rgba(166,76,166,0.3)] hover:scale-110 hover:shadow-[0_0_15px_rgba(166,76,166,0.6)] transition-all duration-300 flex items-center justify-center">
+      <img src="img/instagram.webp" alt="Instagram" class="h-5 w-5 md:h-8 md:w-8 object-contain" />
+    </a>
+
   </div>
 
+  <script>
+    /* SCRIPT PARA LA CUENTA ATRÁS */
+
+    // Establecer la fecha objetivo: 12 de Junio de 2026 a las 17:00:00
+    const countDownDate = new Date("Jun 12, 2026 17:00:00").getTime();
+
+    // Actualizar la cuenta atrás cada 1 segundo (1000 milisegundos)
+    const x = setInterval(function () {
+
+      // Obtener la fecha y hora actual
+      const now = new Date().getTime();
+
+      // Encontrar la distancia entre ahora y la fecha de cuenta atrás
+      const distance = countDownDate - now;
+
+      // Cálculos de tiempo para días, horas, minutos y segundos
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Añadir un '0' delante si el número es menor de 10 para mantener el formato 00
+      const formatDays = days < 10 ? "0" + days : days;
+      const formatHours = hours < 10 ? "0" + hours : hours;
+      const formatMinutes = minutes < 10 ? "0" + minutes : minutes;
+      const formatSeconds = seconds < 10 ? "0" + seconds : seconds;
+
+      // Mostrar los resultados en los elementos correspondientes
+      document.getElementById("days").innerHTML = formatDays;
+      document.getElementById("hours").innerHTML = formatHours;
+      document.getElementById("minutes").innerHTML = formatMinutes;
+      document.getElementById("seconds").innerHTML = formatSeconds;
+
+      // Si la cuenta atrás termina, escribe texto o déjalo a 00
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("days").innerHTML = "00";
+        document.getElementById("hours").innerHTML = "00";
+        document.getElementById("minutes").innerHTML = "00";
+        document.getElementById("seconds").innerHTML = "00";
+      }
+    }, 1000);
+  </script>
+
 </body>
+
 </html>

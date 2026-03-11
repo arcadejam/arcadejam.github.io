@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Jam Attack 3: Jornada de videojuegos indie y programación en Viator. Charlas, presentaciones de proyectos, networking y más. Organizado por Arcade Bits con la colaboración del IES Al-Andalus, La Jaquería y el Ayuntamiento de Viator.">
+  <link rel="icon" type="image/png" href="img/faviconjam.png">
+  <meta name="keywords"
+    content="Jam Attack, videojuegos indie, programación, Viator, evento, charlas, networking, Arcade Bits, IES Al-Andalus, La Jaquería, Heartbyte Studios, Upware Studios, desarrollo de videojuegos, inscripciones, proyectos, Andalucía">
+  <title>Jam Attack 3 - 12 de Junio de 2026</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .font-press-start {
+      font-family: 'Press Start 2P', cursive;
+    }
+
+    @media (max-width: 767px) {
+      section {
+        padding-left: 1em;
+        padding-right: 1em;
+      }
+    }
+  </style>
+</head>
+
+<body
+  class="bg-gradient-to-br from-gray-900 to-[#4a004a]/40 text-gray-100 font-sans leading-relaxed min-h-screen relative">
+
+  <nav
+    class="bg-[#4a004a]/90 border-b border-[#a64ca6] text-white shadow-[0_4px_15px_rgba(166,76,166,0.3)] sticky top-0 z-50 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <div class="flex-shrink-0 text-lg font-bold font-press-start text-yellow-400 text-xs md:text-sm">Jam Attack 3
+        </div>
+        <div class="md:hidden">
+          <button id="menu-toggle" class="text-white focus:outline-none focus:ring-2 focus:ring-[#a64ca6]">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+        <div class="hidden md:flex space-x-6 text-sm font-semibold">
+          <a href="index.html" class="hover:text-yellow-400 transition">Inicio</a>
+          <a href="index.html#programa" class="hover:text-yellow-400 transition">Programa</a>
+          <a href="index.html#plano" class="hover:text-yellow-400 transition">Plano</a>
+          <a href="index.html#organiza" class="hover:text-yellow-400 transition">Organiza</a>
+          <a href="index.html#contacto" class="hover:text-yellow-400 transition">Contacto</a>
+          <a href="invitados.html" class="hover:text-yellow-400 transition">Invitados</a>
+          <a href="reglas.html" class="hover:text-yellow-400 transition">Reglas</a>
+          <a href="equipos.html" class="hover:text-yellow-400 transition">Equipos</a>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 space-y-2 bg-[#4a004a]">
+      <a href="index.html" class="block hover:text-yellow-400">Inicio</a>
+      <a href="index.html#programa" class="block hover:text-yellow-400">Programa</a>
+      <a href="index.html#plano" class="block hover:text-yellow-400">Plano</a>
+      <a href="index.html#organiza" class="block hover:text-yellow-400">Organiza</a>
+      <a href="index.html#contacto" class="block hover:text-yellow-400">Contacto</a>
+      <a href="invitados.html" class="block hover:text-yellow-400">Invitados</a>
+      <a href="reglas.html" class="block hover:text-yellow-400">Reglas</a>
+      <a href="equipos.html" class="block hover:text-yellow-400">Equipos</a>
+    </div>
+  </nav>
+
+  <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    toggleBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+  <section
+    class="max-w-3xl mx-auto mt-16 p-6 md:p-2 text-center bg-[#4a004a]/40 border-2 border-[#a64ca6] rounded-3xl shadow-[0_0_30px_rgba(166,76,166,0.4)] relative overflow-hidden">
+
+    <h3 class="font-press-start text-lg md:text-2xl text-yellow-400 mt-4 mb-4 drop-shadow-[0_0_10px_rgba(250,204,21,0.6)]">
+      REGLAS DE LA JAM</h3>
+
+  </section>
+
+  <section
+    class="container max-w-5xl mx-auto p-8 md:p-10 mt-8 bg-gray-900/80 border-t-4 border-[#a64ca6] rounded-3xl shadow-[0_-5px_25px_rgba(166,76,166,0.2)]">
+    <div class="flex-1">
+      <p class="mb-4">
+      <h1><strong>SE ACEPTAN SOBORNOS</strong></h1>
+      </p>
+      <p class="mb-4">
+      <h1 class="text-xl font-bold text-yellow-400"><strong>Objetivo</strong></h1>
+
+      La Game Jam consiste en desarrollar un videojuego original en un tiempo limitado cuyo tema central sea los
+      patos. Los participantes deberán crear un juego completo desde cero durante el periodo de la jam.
+      </p>
+
+      <p class="mb-4">
+      <h1 class="text-xl font-bold text-yellow-400"><strong>Participación</strong></h1>
+      <ul class="list-disc ml-6 space-y-2 leading-relaxed">
+        <li>La participación puede ser individual o en equipos.</li>
+        <li>Los equipos pueden tener hasta 4 integrantes. Cada participante solo puede formar parte de un único
+          equipo.</li>
+        <li>Todos los miembros del equipo deben estar registrados antes de comenzar la jam.</li>
+      </ul>
+      </p>
+
+      <p class="mb-4">
+      <h1 class="text-xl font-bold text-yellow-400"><strong>Desarrollo del juego</strong></h1>
+      <p class="mb-4">
+      <h2 class="text-purple-300 mb-3"><i>Herramientas permitidas:</i></h2>
+      Se permite el uso de cualquier:
+      <ul class="list-disc ml-6 space-y-2 leading-relaxed">
+        <li>Motor de juego (Unity, Unreal, Godot, GameMaker, etc.).</li>
+        <li>Frameworks o librerías externas.</li>
+        <li>Herramientas de desarrollo de cualquier tipo.</li>
+      </ul>
+      </p>
+      <p class="mb-4"></p>
+      <h2 class="text-purple-300 mb-3"><i>Restricciones:</i></h2>
+
+      Para garantizar igualdad entre participantes:
+      <ul class="list-disc ml-6 space-y-2 leading-relaxed">
+        <li>No se permiten assets prehechos (arte, música, sonido, modelos, sprites, etc.).</li>
+        <li>No se permite el uso de IA generativa para crear arte, código, música o cualquier contenido del juego.
+        </li>
+        <li>No se permite reutilizar proyectos anteriores.</li>
+        <li>Todo el contenido del juego debe ser creado durante la jam por el equipo.</li>
+      </ul>
+      </p>
+
+      <p class="mb-4">
+      <h2 class="text-purple-300 mb-3"><i>Requisitos del juego</i></h2>
+
+      Todos los juegos deberán cumplir obligatoriamente:
+      <ul class="list-disc ml-6 space-y-2 leading-relaxed">
+        <li>La temática debe girar en torno a los patos.</li>
+        <li>El juego debe ser jugable en PC.</li>
+        <li>El juego debe estar en idioma español.</li>
+        <li>El juego debe poder ejecutarse sin requerir software adicional complejo.</li>
+      </ul>
+      </p>
+      <p class="mb-4">
+      <h1 class="text-xl font-bold text-yellow-400"><strong>Entrega del proyecto</strong></h1>
+      <p class="mb-4">
+        Para que un proyecto sea válido deberá incluir:
+      <ul class="list-disc ml-6 space-y-2 leading-relaxed">
+        <li>La build jugable del juego para PC.</li>
+        <li>Una breve descripción del juego.</li>
+        <li>Instrucciones de control.</li>
+        <li>Nombre del equipo y participantes.</li>
+      </ul>
+      </p>
+      Los proyectos deberán entregarse antes de la fecha límite establecida. <strong>Las entregas fuera de plazo
+        podrán
+        quedar descalificadas.</strong>
+      </p>
+      <p class="mb-4">
+      <h1 class="text-xl font-bold text-yellow-400"><strong>Criterios de evaluación</strong></h1>
+
+      <h2 class="text-purple-300 mb-3"><i>Los juegos podrán evaluarse en base a los siguientes criterios:</i></h2>
+      <ul class="list-disc ml-6 space-y-2 leading-relaxed">
+        <li>Uso del tema (<strong>Patos</strong>)</li>
+        <li>Jugabilidad</li>
+        <li>Creatividad / idea</li>
+        <li>Arte y presentación</li>
+        <li>Sonido y música</li>
+        <li>Conducta y juego limpio</li>
+      </ul>
+      </p>
+      <p class="mb-4">
+      <h2 class="text-purple-300 mb-3"><i>No se permitirá:</i></h2>
+      <ul class="list-disc ml-6 space-y-2 leading-relaxed">
+        <li>Plagio de trabajos externos.</li>
+        <li>Uso de contenido con copyright sin permiso.</li>
+        <li>Conductas irrespetuosas hacia otros participantes.</li>
+      </ul>
+      <br>
+      La organización se reserva el derecho de descalificar proyectos que incumplan las normas.
+      </p>
+      <p class="mb-4">
+      <h1 class="text-xl font-bold text-yellow-400"><strong>Derechos del juego</strong></h1>
+      Los desarrolladores mantienen la propiedad de sus juegos.
+      Sin embargo, al participar aceptan que el juego pueda mostrarse públicamente como parte del evento.
+    </div>
+    </div>
+  </section>
+
+  <footer class="mt-20 py-10 border-t-2 border-[#a64ca6] bg-[#4a004a]/80 shadow-[0_-5px_20px_rgba(166,76,166,0.2)]">
+    <div class="container mx-auto text-center px-4">
+      <h3 class="font-press-start text-lg text-yellow-400 mb-4 tracking-widest">JAM ATTACK 3</h3>
+      <p class="text-xs text-gray-300 font-mono uppercase tracking-wider">
+        © 2026
+        <a href="https://arcadebits.es/" target="_blank" rel="noopener"
+          class="text-[#a64ca6] font-bold hover:text-white transition-colors">
+          Arcade Bits
+        </a>.
+        Todos los derechos reservados.
+      </p>
+    </div>
+  </footer>
+
+  <div class="fixed bottom-4 right-4 md:bottom-6 md:right-6 flex flex-col gap-1 md:gap-2 z-50">
+
+    <a href="https://x.com/arcadebits" title="X (Twitter)" target="_blank" rel="noopener" aria-label="X (Twitter)"
+      class="bg-gray-900/80 p-2 md:p-3 rounded-full border border-[#a64ca6] shadow-[0_0_10px_rgba(166,76,166,0.3)] hover:scale-110 hover:shadow-[0_0_15px_rgba(166,76,166,0.6)] transition-all duration-300 flex items-center justify-center">
+      <img src="img/xlogo.webp" alt="X (Twitter)" class="h-5 w-5 md:h-8 md:w-8 object-contain" />
+    </a>
+
+    <a href="https://facebook.com/arcadebits" title="Facebook" target="_blank" rel="noopener" aria-label="Facebook"
+      class="bg-gray-900/80 p-2 md:p-3 rounded-full border border-[#a64ca6] shadow-[0_0_10px_rgba(166,76,166,0.3)] hover:scale-110 hover:shadow-[0_0_15px_rgba(166,76,166,0.6)] transition-all duration-300 flex items-center justify-center">
+      <img src="img/facebooklogo.png" alt="Facebook" class="h-5 w-5 md:h-8 md:w-8 object-contain" />
+    </a>
+
+    <a href="https://instagram.com/arcadebits" title="Instagram" target="_blank" rel="noopener" aria-label="Instagram"
+      class="bg-gray-900/80 p-2 md:p-3 rounded-full border border-[#a64ca6] shadow-[0_0_10px_rgba(166,76,166,0.3)] hover:scale-110 hover:shadow-[0_0_15px_rgba(166,76,166,0.6)] transition-all duration-300 flex items-center justify-center">
+      <img src="img/instagram.webp" alt="Instagram" class="h-5 w-5 md:h-8 md:w-8 object-contain" />
+    </a>
+
+  </div>
+
+</body>
+
+</html>

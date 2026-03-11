@@ -23,7 +23,7 @@
             ]
         },
         {
-            "logo": "/img/equipos/rsxstudios.png",
+            "logo": "img/equipos/rsxstudios.png",
             "titulo": "Shutoko Battle",
             "equipo": "RSX Studios",
             "genero": "Arcade",
@@ -45,7 +45,7 @@
             ]
         },
         {
-            "logo": "/img/equipos/mkg.png",
+            "logo": "img/equipos/mkg.png",
             "titulo": "Errantes Survivor : Mega Duck Edition",
             "equipo": "Make Classic Games",
             "genero": "Arcade",

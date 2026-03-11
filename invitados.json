@@ -22,7 +22,7 @@
             "recursos": [
                 {
                     "name": "Presentación de la charla",
-                    "url": "charlas/Charla1.pptx"
+                    "url": "charlas/charla1.pptx"
                 }
             ]
         },
@@ -36,19 +36,19 @@
                     "nombre": "Bohwuen Moyn",
                     "cargo": "Programador",
                     "bio": "Me llamo Bohwuen y soy programador en Bohwuen and the chairs. Soy un aficionado al zumo de melón. Apuf, no se que más poner, no se me ocurre nada más que decir. Todo es culpa de Sha.",
-                    "foto": "img/charlas/Bohwuen.png"
+                    "foto": "img/charlas/bohwuen.png"
                 },
                 {
                     "nombre": "Silla de mimbre",
                     "cargo": "Diseñadora gráfica",
                     "bio": "Me llamo Silla de mimbre y soy diseñadora gráfica. No pregunteís porque soy diseñadora gráfica, si esa es la preocupación que teneís, haceroslo mirar.",
-                    "foto": "img/charlas/Silla.jpg"
+                    "foto": "img/charlas/silla.jpg"
                 }
             ],
             "recursos": [
                 {
                     "name": "Presentación de la charla",
-                    "url": "charlas/Charla2.pptx"
+                    "url": "charlas/charla2.pptx"
                 }
             ]
         }

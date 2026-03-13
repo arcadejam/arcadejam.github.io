@@ -10,19 +10,19 @@
                     "nombre": "Kaelian Firewind",
                     "cargo": "Programador",
                     "bio": "Me llamo Kaelian y soy programador en RSX Studios. Soy un aficionado a los juegos de carreras y a los RPG. Shutoko Battle es un sueño de unir el mundo de los juegos de coches arcade de los 90 con componentes ligeramente RPG.",
-                    "foto": "/img/charlas/kaelian.png"
+                    "foto": "img/charlas/kaelian.png"
                 },
                 {
                     "nombre": "Nyrelia Lightbreeze",
                     "cargo": "Diseñadora gráfica",
                     "bio": "Me llamo Nyrelia y soy diseñadora gráfica, especializada en diseño conceptual. Me encantan los RPG. Shutoko Battle es un proyecto que me ha permitido explorar la estética de los juegos de carreras arcade de los 90, combinándola con elementos de diseño modernos para crear una experiencia visual única.",
-                    "foto": "/img/charlas/nyrelia.png"
+                    "foto": "img/charlas/nyrelia.png"
                 }
             ],
             "recursos": [
                 {
                     "name": "Presentación de la charla",
-                    "url": "/charlas/Charla1.pptx"
+                    "url": "charlas/charla1.pptx"
                 }
             ]
         },
@@ -36,19 +36,19 @@
                     "nombre": "Bohwuen Moyn",
                     "cargo": "Programador",
                     "bio": "Me llamo Bohwuen y soy programador en Bohwuen and the chairs. Soy un aficionado al zumo de melón. Apuf, no se que más poner, no se me ocurre nada más que decir. Todo es culpa de Sha.",
-                    "foto": "/img/charlas/Bohwuen.png"
+                    "foto": "img/charlas/bohwuen.png"
                 },
                 {
                     "nombre": "Silla de mimbre",
                     "cargo": "Diseñadora gráfica",
                     "bio": "Me llamo Silla de mimbre y soy diseñadora gráfica. No pregunteís porque soy diseñadora gráfica, si esa es la preocupación que teneís, haceroslo mirar.",
-                    "foto": "/img/charlas/Silla.jpg"
+                    "foto": "img/charlas/silla.jpg"
                 }
             ],
             "recursos": [
                 {
                     "name": "Presentación de la charla",
-                    "url": "/charlas/Charla2.pptx"
+                    "url": "charlas/charla2.pptx"
                 }
             ]
         }

@@ -23,7 +23,7 @@
             ]
         },
         {
-            "logo": "/img/equipos/rsxstudios.png",
+            "logo": "img/equipos/rsxstudios.png",
             "titulo": "Shutoko Battle",
             "equipo": "RSX Studios",
             "genero": "Arcade",
@@ -40,12 +40,12 @@
                 {
                     "nombre": "Nyrelia Lightbreeze",
                     "rol": "Diseñadora gráfica",
-                    "descripcion": "Irene es una diseñadora gráfica enamorada de los RPG y los juegos de aventura."
+                    "descripcion": "Nyrelia es una diseñadora gráfica enamorada de los RPG y los juegos de aventura."
                 }
             ]
         },
         {
-            "logo": "/img/equipos/mkg.png",
+            "logo": "img/equipos/mkg.png",
             "titulo": "Errantes Survivor : Mega Duck Edition",
             "equipo": "Make Classic Games",
             "genero": "Arcade",

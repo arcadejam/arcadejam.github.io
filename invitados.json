@@ -4,7 +4,7 @@
             "titulo": "Del diseño al ordenador: Cómo se diseño y programó Shutoko Battle",
             "fecha": "12 de Junio de 2026",
             "horario": "17:00-17:45",
-            "descripcion": "Contenido: <ol class='list-decimal list-inside'><li>La idea original.</li><li>Inspiración.</li><li>Dandole vida a los píxeles.</li><li>Consejos.</li></ol>",
+            "descripcion": "<u class='font-semibold'>Contenido</u>: <ol class='list-decimal list-inside'><li>La idea original.</li><li>Inspiración.</li><li>Dandole vida a los píxeles.</li><li>Consejos.</li></ol>",
             "autores": [
                 {
                     "nombre": "Kaelian Firewind",
@@ -30,7 +30,7 @@
             "titulo": "Cómo se hizo Duck Hunter 3 - Hunter's revenge",
             "fecha": "13 de Junio de 2026",
             "horario": "17:00-17:45",
-            "descripcion": "Contenido: <ol class='list-decimal list-inside'><li>La idea original.</li><li>Inspiración.</li><li>Dandole vida a los píxeles.</li><li>Consejos.</li></ol>",
+            "descripcion": "<u class='font-semibold'>Contenido</u>: <ol class='list-decimal list-inside'><li>La idea original.</li><li>Inspiración.</li><li>Dandole vida a los píxeles.</li><li>Consejos.</li></ol>",
             "autores": [
                 {
                     "nombre": "Bohwuen Moyn",

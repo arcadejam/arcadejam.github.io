@@ -1,0 +1,10 @@
+.font-press-start {
+    font-family: 'Press Start 2P', cursive;
+}
+
+@media (max-width: 767px) {
+    section {
+    padding-left: 1em;
+    padding-right: 1em;
+    }
+    }

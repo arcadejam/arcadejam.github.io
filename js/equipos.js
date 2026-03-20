@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const miembrosHTML = equipo.miembros.map(m => `
           <li>
             <b>${m.nombre}</b> — ${m.rol}<br>
-            <span class="text-sm text-gray-400">${m.descripcion}</span>
+            <span class="text-sm text-gray-400 text-justify">${m.descripcion}</span>
           </li>
         `).join("");
 

@@ -63,7 +63,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
               <p class="text-purple-300 mb-3">${equipo.equipo}</p>
 
-              <p class="mb-4">${equipo.descripcion}</p>
+              <p class="mb-4 text-justify">
+                ${equipo.descripcion}
+              </p>
 
               <p class="text-sm mb-3">
                 <b>Género:</b> ${equipo.genero} |

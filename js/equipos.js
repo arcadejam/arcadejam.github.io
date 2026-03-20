@@ -34,7 +34,15 @@ document.addEventListener("DOMContentLoaded", () => {
         const section = document.createElement("section");
 
         section.className =
-          "container max-w-5xl mx-auto p-8 md:p-10 mt-8 bg-gray-900/80 border-t-4 border-[#a64ca6] rounded-3xl";
+          "max-w-4xl mx-4 md:mx-auto bg-gray-900/80 border-2 border-[#a64ca6] p-6 rounded-2xl mt-16 shadow-[0_0_20px_rgba(166,76,166,0.2)] backdrop-blur-sm";;
+
+        const descargaHTML = equipo.descarga ? `
+         <a href="${equipo.descarga}" 
+          target="_blank"
+         class="inline-block bg-yellow-400 text-black font-semibold px-4 py-2 rounded-lg hover:bg-purple-300 transition">
+         Descargar juego
+         </a>
+` : "";
 
         section.innerHTML = `
           <div class="flex flex-col md:flex-row gap-6">
@@ -60,7 +68,9 @@ document.addEventListener("DOMContentLoaded", () => {
               <ul class="list-disc ml-5">
                 ${miembrosHTML}
               </ul>
-
+<div class="mt-4 text-right">
+  ${descargaHTML}
+</div>
             </div>
 
           </div>
@@ -88,7 +98,7 @@ function mostrarProximamente() {
   const section = document.createElement("section");
 
   section.className =
-    "container max-w-5xl mx-auto p-8 md:p-10 mt-8 bg-gray-900/80 border-t-4 border-[#a64ca6] rounded-3xl shadow-[0_-5px_25px_rgba(166,76,166,0.2)]"
+    "max-w-4xl mx-4 md:mx-auto bg-gray-900/80 border-2 border-[#a64ca6] p-6 rounded-2xl mt-16 shadow-[0_0_20px_rgba(166,76,166,0.2)] backdrop-blur-sm";
 
   section.innerHTML = `
     <h2 class="font-press-start text-center text-yellow-400 text-xl">

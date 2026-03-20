@@ -1,31 +1,22 @@
 <!DOCTYPE html>
 <html lang="es" class="scroll-smooth scroll-pt-24">
-<html lang="es" class="scroll-smooth scroll-pt-24">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="II Jam Attack: Jornada de videojuegos indie y programación en Viator. Charlas, presentaciones de proyectos, networking y más. Organizado por Arcade Bits con la colaboración del IES Al-Andalus, La Jaquería y el Ayuntamiento de Viator.">
-  <link rel="icon" type="image/png" href="img/faviconjam.png">
+  <meta name="description" content="III Jam Attack: Jornada de videojuegos indie y programación en Viator. Charlas, presentaciones de proyectos, networking y más. Organizado por Arcade Bits con la colaboración del IES Al-Andalus, La Jaquería y el Ayuntamiento de Viator.">
   <meta name="keywords"
     content="Jam Attack, videojuegos indie, programación, Viator, evento, charlas, networking, Arcade Bits, IES Al-Andalus, La Jaquería, Heartbyte Studios, Upware Studios, desarrollo de videojuegos, inscripciones, proyectos, Andalucía">
+
   <title>Jam Attack 3 - 12 de Junio de 2026</title>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="img/faviconjam.png">
+
   <style>
-    .font-press-start {
-      font-family: 'Press Start 2P', cursive;
-    }
-
-    @media (max-width: 767px) {
-      section {
-        padding-left: 1em;
-        padding-right: 1em;
-      }
-    }
-
     @keyframes float {
 
       0%,
@@ -64,7 +55,7 @@
         <div class="hidden md:flex space-x-6 text-sm font-semibold">
           <a href="#home" class="hover:text-yellow-400 transition">Home</a>
           <a href="#horario" class="hover:text-yellow-400 transition">Programa</a>
-          <a href="#plano" class="hover:text-yellow-400 transition">Plano</a>
+          <a href="#como-llegar" class="hover:text-yellow-400 transition">Como llegar</a>
           <a href="#organiza" class="hover:text-yellow-400 transition">Organiza</a>
           <a href="#contacto" class="hover:text-yellow-400 transition">Contacto</a>
           <a href="invitados.html" class="hover:text-yellow-400 transition">Invitados</a>
@@ -76,7 +67,7 @@
     <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 space-y-2 bg-[#4a004a]">
       <a href="#home" class="block hover:text-yellow-400">Home</a>
       <a href="#horario" class="block hover:text-yellow-400">Programa</a>
-      <a href="#plano" class="block hover:text-yellow-400">Plano</a>
+      <a href="#como-llegar" class="block hover:text-yellow-400">Como llegar</a>
       <a href="#organiza" class="block hover:text-yellow-400">Organiza</a>
       <a href="#contacto" class="block hover:text-yellow-400">Contacto</a>
       <a href="invitados.html" class="block hover:text-yellow-400">Invitados</a>
@@ -85,15 +76,6 @@
 
     </div>
   </nav>
-
-  <script>
-    const toggleBtn = document.getElementById('menu-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    toggleBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-  </script>
 
   <header id="home"
     class="container max-w-6xl mx-auto p-8 md:p-10 flex flex-col lg:flex-row items-center justify-between gap-12 mt-8">
@@ -159,7 +141,7 @@
   </header>
 
 <section id="programa"
-    class="max-w-4xl mx-auto bg-gray-900/80 border-2 border-[#a64ca6] p-6 rounded-2xl mt-16 shadow-[0_0_20px_rgba(166,76,166,0.2)] backdrop-blur-sm">
+    class="max-w-4xl mx-4 md:mx-auto bg-gray-900/80 border-2 border-[#a64ca6] p-6 rounded-2xl mt-16 shadow-[0_0_20px_rgba(166,76,166,0.2)] backdrop-blur-sm">
     <div class="flex flex-col md:flex-row items-center gap-6">
       <div class="flex-1 text-gray-200">
         Este evento único se llevará a cabo el <strong class="text-yellow-400">12 de junio</strong> de 17:00 a 19:00, el
@@ -234,7 +216,7 @@
                 colspan="2">14 de Junio</td>
             </tr>
             <tr class="hover:bg-gray-800 transition">
-              <td class="px-3 py-4 w-40 text-center font-mono">10:00 - 10:30</td>
+              <td class="px-3 py-4 w-40 text-center font-mono">10:00</td>
               <td class="px-4 py-4 text-pink-400 font-bold">Entrega de proyectos, fecha límite.</td>
             </tr>
             <tr class="hover:bg-gray-800 transition">
@@ -251,9 +233,9 @@
     </div>
 </section>
 
-  <section id="plano"
-    class="max-w-4xl mx-auto mt-16 p-6 border-2 border-[#a64ca6] bg-gray-900/60 rounded-2xl shadow-[0_0_20px_rgba(166,76,166,0.2)]">
-    <h3
+<section id="plano"
+  class="max-w-4xl mx-4 md:mx-auto mt-16 p-6 border-2 border-[#a64ca6] bg-gray-900/60 rounded-2xl shadow-[0_0_20px_rgba(166,76,166,0.2)]">
+    <!-- <h3
       class="font-press-start text-sm md:text-base text-yellow-400 mb-6 text-center drop-shadow-[0_0_8px_rgba(250,204,21,0.6)]">
       Plano del evento</h3>
     <div class="text-base text-gray-300">
@@ -272,9 +254,9 @@
           <strong class="text-yellow-400 block mb-2 font-press-start text-[10px]">Conferencias</strong> Charlas de
           profesionales y alumnos de los centros.</li>
       </ul>
-    </div>
+    </div>  -->
 
-    <div class="mt-10">
+    <div id="como-llegar" class="mt-10">
       <h4
         class="text-yellow-400 font-press-start text-xs md:text-sm mb-4 text-center drop-shadow-[0_0_8px_rgba(250,204,21,0.6)]">
         Cómo llegar</h4>
@@ -296,7 +278,7 @@
   </section>
 
 <section id="organiza"
-  class="container max-w-5xl mx-auto p-8 md:p-10 mt-16 bg-gray-900/80 border-t-4 border-[#a64ca6] rounded-3xl shadow-[0_-5px_25px_rgba(166,76,166,0.2)]">
+  class="max-w-5xl mx-4 md:mx-auto p-8 md:p-10 mt-16 bg-gray-900/80 border-t-4 border-[#a64ca6] rounded-3xl shadow-[0_-5px_25px_rgba(166,76,166,0.2)]">
 
   <h3 class="font-press-start text-sm md:text-base text-yellow-400 mb-8 text-center drop-shadow-[0_0_8px_rgba(250,204,21,0.6)]">
     ORGANIZA
@@ -353,8 +335,8 @@
   </div>
 </section>
 
-  <section id="contacto"
-    class="max-w-3xl mx-auto mt-16 p-8 md:p-12 text-center bg-[#4a004a]/40 border-2 border-[#a64ca6] rounded-3xl shadow-[0_0_30px_rgba(166,76,166,0.4)] relative overflow-hidden">
+<section id="contacto"
+    class="max-w-3xl mx-4 md:mx-auto mt-16 p-8 md:p-12 text-center bg-[#4a004a]/40 border-2 border-[#a64ca6] rounded-3xl shadow-[0_0_30px_rgba(166,76,166,0.4)] relative overflow-hidden">
 
     <h3 class="font-press-start text-lg md:text-2xl text-yellow-400 mb-6 drop-shadow-[0_0_10px_rgba(250,204,21,0.6)]">
       CONTACTO</h3>
@@ -424,50 +406,15 @@
 
   </div>
 
-  <script>
-    /* SCRIPT PARA LA CUENTA ATRÁS */
+    <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
 
-    // Establecer la fecha objetivo: 12 de Junio de 2026 a las 17:00:00
-    const countDownDate = new Date("Jun 12, 2026 17:00:00").getTime();
-
-    // Actualizar la cuenta atrás cada 1 segundo (1000 milisegundos)
-    const x = setInterval(function () {
-
-      // Obtener la fecha y hora actual
-      const now = new Date().getTime();
-
-      // Encontrar la distancia entre ahora y la fecha de cuenta atrás
-      const distance = countDownDate - now;
-
-      // Cálculos de tiempo para días, horas, minutos y segundos
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      // Añadir un '0' delante si el número es menor de 10 para mantener el formato 00
-      const formatDays = days < 10 ? "0" + days : days;
-      const formatHours = hours < 10 ? "0" + hours : hours;
-      const formatMinutes = minutes < 10 ? "0" + minutes : minutes;
-      const formatSeconds = seconds < 10 ? "0" + seconds : seconds;
-
-      // Mostrar los resultados en los elementos correspondientes
-      document.getElementById("days").innerHTML = formatDays;
-      document.getElementById("hours").innerHTML = formatHours;
-      document.getElementById("minutes").innerHTML = formatMinutes;
-      document.getElementById("seconds").innerHTML = formatSeconds;
-
-      // Si la cuenta atrás termina, escribe texto o déjalo a 00
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("days").innerHTML = "00";
-        document.getElementById("hours").innerHTML = "00";
-        document.getElementById("minutes").innerHTML = "00";
-        document.getElementById("seconds").innerHTML = "00";
-      }
-    }, 1000);
+    toggleBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
   </script>
 
+  <script src="script.js"></script>
 </body>
-
 </html>

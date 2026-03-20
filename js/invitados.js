@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   fetch("json/invitados.json")
     .then(res => {
-      if (!res.ok) throw new Error("No existe JSON");
+      if (!res.ok) throw new Error("No exite JSON");
       return res.json();
     })
     .then(data => {
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <div>
               <p class="font-semibold">${autor.nombre}</p>
               <p class="text-purple-300 text-sm">${autor.cargo}</p>
-              <p class="text-sm text-gray-400">${autor.bio}</p>
+              <p class="text-sm text-gray-400 text-justify">${autor.bio}</p>
             </div>
 
           </div>
@@ -42,11 +42,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // 🔹 Recursos
         const recursosHTML = (charla.recursos || []).map(recurso => `
+          <div class="flex justify-end mt-4">
           <a href="${recurso.url}" 
-             class="text-yellow-400 text-right hover:underline block mt-2"
-             target="_blank">
-             ${recurso.name}
+            rel="noopener noreferrer"
+            target="_blank"
+            class="inline-block bg-[#a64ca6] text-left text-white font-press-start
+            text-[8px] md:text-[10px] py-2 px-4 rounded-lg hover:bg-yellow-400
+            hover:text-[#4a004a] hover:-translate-y-1 transition-all duration-300
+            shadow-[0_4px_0_#4a004a] hover:shadow-[0_6px_0_#4a004a]">
+            ${recurso.name}
           </a>
+          </div>
         `).join("");
 
         section.innerHTML = `
@@ -95,7 +101,7 @@ function mostrarProximamente() {
   const section = document.createElement("section");
 
   section.className =
-          "max-w-4xl mx-4 md:mx-auto bg-gray-900/80 border-2 border-[#a64ca6] p-6 rounded-2xl mt-16 shadow-[0_0_20px_rgba(166,76,166,0.2)] backdrop-blur-sm";;
+    "max-w-4xl mx-4 md:mx-auto bg-gray-900/80 border-2 border-[#a64ca6] p-6 rounded-2xl mt-16 shadow-[0_0_20px_rgba(166,76,166,0.2)] backdrop-blur-sm";;
 
   section.innerHTML = `
     <h2 class="font-press-start text-yellow-400 text-lg md:text-2xl text-center">

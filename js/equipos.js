@@ -37,11 +37,17 @@ document.addEventListener("DOMContentLoaded", () => {
           "max-w-4xl mx-4 md:mx-auto bg-gray-900/80 border-2 border-[#a64ca6] p-6 rounded-2xl mt-16 shadow-[0_0_20px_rgba(166,76,166,0.2)] backdrop-blur-sm";;
 
         const descargaHTML = equipo.descarga ? `
-         <a href="${equipo.descarga}" 
-          target="_blank"
-         class="inline-block bg-yellow-400 text-black font-semibold px-4 py-2 rounded-lg hover:bg-purple-300 transition">
-         Descargar juego
-         </a>
+          <div class="flex justify-end mt-4">
+          <a href="${equipo.descarga}" 
+            rel="noopener noreferrer"
+            target="_blank"
+            class="inline-block bg-[#a64ca6] text-left text-white font-press-start
+            text-[8px] md:text-[10px] py-2 px-4 rounded-lg hover:bg-yellow-400
+            hover:text-[#4a004a] hover:-translate-y-1 transition-all duration-300
+            shadow-[0_4px_0_#4a004a] hover:shadow-[0_6px_0_#4a004a]">
+            🕹️ Descargar juego
+          </a>
+          </div>
 ` : "";
 
         section.innerHTML = `

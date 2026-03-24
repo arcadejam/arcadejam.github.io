@@ -1,0 +1,27 @@
+
+{
+    "equipos": [
+        {
+            "logo": "",
+            "titulo": "",
+            "equipo": "",
+            "genero": "",
+            "descripcion": "",
+            "motor": "",
+            "jugadores": "",
+            "descarga": "",
+            "miembros": [
+                {
+                    "nombre": "",
+                    "rol": "",
+                    "descripcion": "."
+                },
+                {
+                    "nombre": "",
+                    "rol": "",
+                    "descripcion": ""
+                }
+            ]
+        }
+    ]
+}

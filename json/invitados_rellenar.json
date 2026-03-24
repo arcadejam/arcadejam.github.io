@@ -1,0 +1,24 @@
+{
+    "invitados": [
+        {
+            "titulo": "",
+            "fecha": "",
+            "horario": "",
+            "descripcion": "<u class='font-semibold'>Contenido</u>: <ol class='list-decimal list-inside'><li>Ejemplo</li></ol>",
+            "autores": [
+                {
+                    "nombre": "",
+                    "cargo": "",
+                    "bio": "",
+                    "foto": ""
+                }
+            ],
+            "recursos": [
+                {
+                    "name": "",
+                    "url": ""
+                }
+            ]
+        }
+    ]
+}

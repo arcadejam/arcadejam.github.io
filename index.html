@@ -36,7 +36,7 @@
 </head>
 
 <body
-  class="bg-gradient-to-br from-gray-900 to-[#4a004a]/40 text-gray-100 font-sans leading-relaxed min-h-screen relative">
+  class="bg-gradient-to-br from-gray-900 to-[#4a004a]/40 text-gray-100 font-sans leading-relaxed min-h-screen relative overflow-x-hidden">
 
   <nav
     class="bg-[#4a004a]/90 border-b border-[#a64ca6] text-white shadow-[0_4px_15px_rgba(166,76,166,0.3)] sticky top-0 z-50 backdrop-blur-sm">
@@ -64,7 +64,8 @@
         </div>
       </div>
     </div>
-    <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 space-y-2 bg-[#4a004a]">
+
+    <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 space-y-2 bg-[#4a004a] text-center">
       <a href="#home" class="block hover:text-yellow-400">Home</a>
       <a href="#horario" class="block hover:text-yellow-400">Programa</a>
       <a href="#como-llegar" class="block hover:text-yellow-400">Como llegar</a>
@@ -73,12 +74,11 @@
       <a href="invitados.html" class="block hover:text-yellow-400">Invitados</a>
       <a href="reglas.html" class="block hover:text-yellow-400">Reglas</a>
       <a href="equipos.html" class="block hover:text-yellow-400">Equipos</a>
-
     </div>
   </nav>
 
   <header id="home"
-    class="container max-w-6xl mx-auto p-8 md:p-10 flex flex-col lg:flex-row items-center justify-between gap-12 mt-8">
+    class="w-full max-w-6xl mx-auto p-8 md:p-10 flex flex-col lg:flex-row items-center justify-between gap-12 mt-8">
 
     <div class="flex flex-col items-center lg:items-start text-center lg:text-left">
       <div class="flex flex-col md:flex-row items-center gap-8">
@@ -96,7 +96,7 @@
           <p class="text-xl md:text-2xl font-semibold text-yellow-400 mb-8">12 DE JUNIO DE 2026</p>
 
           <div class="w-full flex justify-center lg:justify-center lg:pr-8">
-            <a href="#"
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSckYm2nLwuKpyX2Vwyl3LL5snR1KJb8sBinKkHgyNQz1PeVuA/viewform?usp=sharing&ouid=101926992971395208750"
               class="inline-block bg-[#a64ca6] text-white font-press-start text-[10px] md:text-xs py-4 px-8 rounded-lg hover:bg-yellow-400 hover:text-[#4a004a] hover:-translate-y-1 transition-all duration-300 shadow-[0_4px_0_#4a004a] hover:shadow-[0_6px_0_#4a004a]">
               Inscríbete Ahora
             </a>
@@ -187,12 +187,12 @@
             </tr>
             <tr class="hover:bg-gray-800 transition">
               <td class="px-3 py-3 w-40 text-center font-mono">17:30 - 18:00</td>
-              <td class="px-4 py-3"><span class="text-[#a64ca6] font-bold">IES Al-Andalus</span> - Presentación Curso de
+              <td class="px-4 py-3"><span class="text-[#F472B6] font-bold">IES Al-Andalus</span> - Presentación Curso de
                 especialización.</td>
             </tr>
             <tr class="hover:bg-gray-800 transition">
               <td class="px-3 py-3 w-40 text-center font-mono">18:00 - 18:45</td>
-                <td class="px-4 py-3"><span class="text-[#a64ca6] font-bold">IES Al-Andalus</span> - Presentación de proyectos y demos.</td>
+                <td class="px-4 py-3"><span class="text-[#F472B6] font-bold">IES Al-Andalus</span> - Presentación de proyectos y demos.</td>
             </tr>
             <tr class="hover:bg-gray-800 transition">
               <td class="px-3 py-3 w-40 text-center font-mono">18:45 - 19:00</td>
@@ -235,26 +235,6 @@
 
 <section id="plano"
   class="max-w-4xl mx-4 md:mx-auto mt-16 p-6 border-2 border-[#a64ca6] bg-gray-900/60 rounded-2xl shadow-[0_0_20px_rgba(166,76,166,0.2)]">
-    <!-- <h3
-      class="font-press-start text-sm md:text-base text-yellow-400 mb-6 text-center drop-shadow-[0_0_8px_rgba(250,204,21,0.6)]">
-      Plano del evento</h3>
-    <div class="text-base text-gray-300">
-      <img src="img/Plano.png" alt="Plano del evento"
-        class="w-full h-auto rounded-lg border border-[#4a004a] shadow-md mb-4 bg-white/5 p-2">
-      <p class="mt-6 mb-4 text-center">Aquí puedes encontrar el plano del lugar. En cada sala podrás encontrar:</p>
-
-      <ul class="list-none grid grid-cols-1 md:grid-cols-3 gap-4 text-sm text-center">
-        <li class="bg-[#4a004a]/40 p-4 rounded-lg border border-[#a64ca6]/50 hover:border-[#a64ca6] transition-colors">
-          <strong class="text-yellow-400 block mb-2 font-press-start text-[10px]">Presentaciones</strong> Proyectos y
-          demos para probar nuevos desarrollos.</li>
-        <li class="bg-[#4a004a]/40 p-4 rounded-lg border border-[#a64ca6]/50 hover:border-[#a64ca6] transition-colors">
-          <strong class="text-yellow-400 block mb-2 font-press-start text-[10px]">Freeplay Indie</strong> Juega para
-          probar juegos independientes y conocidos.</li>
-        <li class="bg-[#4a004a]/40 p-4 rounded-lg border border-[#a64ca6]/50 hover:border-[#a64ca6] transition-colors">
-          <strong class="text-yellow-400 block mb-2 font-press-start text-[10px]">Conferencias</strong> Charlas de
-          profesionales y alumnos de los centros.</li>
-      </ul>
-    </div>  -->
 
     <div id="como-llegar" class="mt-10">
       <h4

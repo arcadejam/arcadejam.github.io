@@ -18,10 +18,8 @@
   <link rel="icon" type="image/png" href="img/faviconjam.png">
 </head>
 
-<script src="js/invitados.js"></script>
-
 <body
-  class="bg-gradient-to-br from-gray-900 to-[#4a004a]/40 text-gray-100 font-sans leading-relaxed min-h-screen relative">
+  class="flex flex-col bg-gradient-to-br from-gray-900 to-[#4a004a]/40 text-gray-100 font-sans leading-relaxed min-h-screen relative">
 
   <nav
     class="bg-[#4a004a]/90 border-b border-[#a64ca6] text-white shadow-[0_4px_15px_rgba(166,76,166,0.3)] sticky top-0 z-50 backdrop-blur-sm">
@@ -37,10 +35,11 @@
             </svg>
           </button>
         </div>
-        <div class="hidden md:flex space-x-6 text-sm font-semibold">
-          <a href="index.html" class="hover:text-yellow-400 transition">Inicio</a>
-          <a href="index.html#programa" class="hover:text-yellow-400 transition">Programa</a>
-          <a href="index.html#plano" class="hover:text-yellow-400 transition">Plano</a>
+        <div class="hidden lg:flex space-x-6 text-sm font-semibold">
+          <a href="index.html" class="hover:text-yellow-400 transition">Home</a>
+          <a href="index.html#horario" class="hover:text-yellow-400 transition">Programa</a>
+          <a href="index.html#como-llegar" class="hover:text-yellow-400 transition">Como llegar</a>
+          <a href="index.html#ediciones-anteriores" class="hover:text-yellow-400 transition">Ediciones Anteriores</a>
           <a href="index.html#organiza" class="hover:text-yellow-400 transition">Organiza</a>
           <a href="index.html#contacto" class="hover:text-yellow-400 transition">Contacto</a>
           <a href="invitados.html" class="hover:text-yellow-400 transition">Invitados</a>
@@ -49,15 +48,17 @@
         </div>
       </div>
     </div>
-    <div id="mobile-menu" class="hidden md:hidden px-4 pb-4 space-y-2 bg-[#4a004a] text-center">
-      <a href="index.html" class="block text-center hover:text-yellow-400">Inicio</a>
-      <a href="index.html#programa" class="block text-center hover:text-yellow-400">Programa</a>
-      <a href="index.html#plano" class="block text-center hover:text-yellow-400">Plano</a>
-      <a href="index.html#organiza" class="block text-center hover:text-yellow-400">Organiza</a>
-      <a href="index.html#contacto" class="block text-center hover:text-yellow-400">Contacto</a>
-      <a href="invitados.html" class="block text-center hover:text-yellow-400">Invitados</a>
-      <a href="reglas.html" class="block text-center hover:text-yellow-400">Reglas</a>
-      <a href="equipos.html" class="block text-center hover:text-yellow-400">Equipos</a>
+
+    <div id="mobile-menu" class="hidden lg:hidden px-4 pb-4 space-y-2 bg-[#4a004a] text-center">
+      <a href="index.html" class="block hover:text-yellow-400">Home</a>
+      <a href="index.html#horario" class="block hover:text-yellow-400">Programa</a>
+      <a href="index.html#como-llegar" class="block hover:text-yellow-400">Como llegar</a>
+      <a href="index.html#ediciones-anteriores" class="block hover:text-yellow-400">Ediciones Anteriores</a>
+      <a href="index.html#organiza" class="block hover:text-yellow-400">Organiza</a>
+      <a href="index.html#contacto" class="block hover:text-yellow-400">Contacto</a>
+      <a href="invitados.html" class="block hover:text-yellow-400">Invitados</a>
+      <a href="reglas.html" class="block hover:text-yellow-400">Reglas</a>
+      <a href="equipos.html" class="block hover:text-yellow-400">Equipos</a>
     </div>
   </nav>
 
@@ -70,20 +71,20 @@
     });
   </script>
 
-<div class="px-4 sm:px-6 md:px-8">
-  <section
-    class="max-w-2xl mx-auto mt-8 p-8 md:p-10 text-center bg-[#4a004a]/40 border-2 border-[#a64ca6] rounded-2xl shadow-[0_0_30px_rgba(166,76,166,0.4)] relative overflow-hidden">
+  <main class="flex-grow">
+    <div class="px-4 sm:px-6 md:px-8">
+      <section
+        class="max-w-2xl mx-auto mt-8 p-8 md:p-10 text-center bg-[#4a004a]/40 border-2 border-[#a64ca6] rounded-2xl shadow-[0_0_30px_rgba(166,76,166,0.4)] relative overflow-hidden">
+        <h3
+          class="font-press-start text-lg md:text-2xl text-yellow-400 mt-4 mb-4 drop-shadow-[0_0_10px_rgba(250,204,21,0.6)]">
+          INVITADOS
+        </h3>
+      </section>
+      <div id="charlas"></div>
+    </div>
+  </main>
 
-    <h3 class="font-press-start text-lg md:text-2xl text-yellow-400 mt-4 mb-4 drop-shadow-[0_0_10px_rgba(250,204,21,0.6)]">
-      INVITADOS
-    </h3>
-
-  </section>
-</div>
-
-  <div id="charlas"></div>
-
-  <footer class="mt-20 py-10 md:py-4 md:px-5 md:p-2 gap-2 md:gap-3  border-t-2 border-[#a64ca6] bg-[#4a004a]/80 shadow-[0_-5px_20px_rgba(166,76,166,0.2)]">
+  <footer class="mt-20 py-10 border-t-2 border-[#a64ca6] bg-[#4a004a]/80 shadow-[0_-5px_20px_rgba(166,76,166,0.2)]">
     <div class="container mx-auto text-center px-4">
       <h3 class="font-press-start text-lg text-yellow-400 mb-4 tracking-widest">JAM ATTACK 3</h3>
       <p class="text-xs text-gray-300 font-mono uppercase tracking-wider">
@@ -97,25 +98,22 @@
     </div>
   </footer>
 
-  <div class="fixed bottom-4 right-4 md:bottom-6 md:right-6 flex flex-col gap-1 md:gap-2 z-50">
+  <script src="js/invitados.js"></script>
 
+  <div class="fixed bottom-4 right-4 md:bottom-6 md:right-6 flex flex-col gap-1 md:gap-2 z-50">
     <a href="https://x.com/arcadebits" title="X (Twitter)" target="_blank" rel="noopener" aria-label="X (Twitter)"
       class="bg-gray-900/80 p-2 md:p-3 rounded-full border border-[#a64ca6] shadow-[0_0_10px_rgba(166,76,166,0.3)] hover:scale-110 hover:shadow-[0_0_15px_rgba(166,76,166,0.6)] transition-all duration-300 flex items-center justify-center">
       <img src="img/xlogo.webp" alt="X (Twitter)" class="h-5 w-5 md:h-8 md:w-8 object-contain" />
     </a>
-
     <a href="https://facebook.com/arcadebits" title="Facebook" target="_blank" rel="noopener" aria-label="Facebook"
       class="bg-gray-900/80 p-2 md:p-3 rounded-full border border-[#a64ca6] shadow-[0_0_10px_rgba(166,76,166,0.3)] hover:scale-110 hover:shadow-[0_0_15px_rgba(166,76,166,0.6)] transition-all duration-300 flex items-center justify-center">
       <img src="img/facebooklogo.png" alt="Facebook" class="h-5 w-5 md:h-8 md:w-8 object-contain" />
     </a>
-
     <a href="https://instagram.com/arcadebits" title="Instagram" target="_blank" rel="noopener" aria-label="Instagram"
       class="bg-gray-900/80 p-2 md:p-3 rounded-full border border-[#a64ca6] shadow-[0_0_10px_rgba(166,76,166,0.3)] hover:scale-110 hover:shadow-[0_0_15px_rgba(166,76,166,0.6)] transition-all duration-300 flex items-center justify-center">
       <img src="img/instagram.webp" alt="Instagram" class="h-5 w-5 md:h-8 md:w-8 object-contain" />
     </a>
-
   </div>
-
 </body>
 
 </html>

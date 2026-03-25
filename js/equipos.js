@@ -27,14 +27,14 @@ document.addEventListener("DOMContentLoaded", () => {
         const miembrosHTML = equipo.miembros.map(m => `
           <li>
             <b>${m.nombre}</b> — ${m.rol}<br>
-            <span class="text-sm text-gray-400 text-justify">${m.descripcion}</span>
+            <p class="text-sm text-gray-400 text-justify">${m.descripcion}</p>
           </li>
         `).join("");
 
         const section = document.createElement("section");
 
         section.className =
-          "max-w-4xl mx-4 md:mx-auto bg-gray-900/80 border-2 border-[#a64ca6] p-6 rounded-2xl mt-16 shadow-[0_0_20px_rgba(166,76,166,0.2)] backdrop-blur-sm";;
+          "max-w-2xl mx-auto mt-8 p-8 md:p-10 bg-gray-900/80 border-2 border-[#a64ca6] rounded-2xl shadow-[0_0_20px_rgba(166,76,166,0.2)] backdrop-blur-sm";;
 
         const descargaHTML = equipo.descarga ? `
           <div class="flex justify-end mt-4">
@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <b>Jugadores:</b> ${equipo.jugadores}
               </p>
 
-              <ul class="list-disc ml-5">
+              <ul class="list-disc ml-10">
                 ${miembrosHTML}
               </ul>
 <div class="mt-4 text-right">
@@ -106,7 +106,7 @@ function mostrarProximamente() {
   const section = document.createElement("section");
 
   section.className =
-    "max-w-4xl mx-4 md:mx-auto bg-gray-900/80 border-2 border-[#a64ca6] p-6 rounded-2xl mt-16 shadow-[0_0_20px_rgba(166,76,166,0.2)] backdrop-blur-sm";
+    "max-w-2xl mx-auto mt-8 p-8 md:p-10 bg-gray-900/80 border-2 border-[#a64ca6] rounded-2xl shadow-[0_0_20px_rgba(166,76,166,0.2)] backdrop-blur-sm";
 
   section.innerHTML = `
     <h2 class="font-press-start text-center text-yellow-400 text-xl">

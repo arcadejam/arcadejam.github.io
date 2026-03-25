@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const section = document.createElement("section");
 
         section.className =
-          "max-w-4xl mx-4 md:mx-auto bg-gray-900/80 border-2 border-[#a64ca6] p-6 rounded-2xl mt-16 shadow-[0_0_20px_rgba(166,76,166,0.2)] backdrop-blur-sm";;
+          "max-w-2xl mx-auto mt-8 p-8 md:p-10 bg-gray-900/80 border-2 border-[#a64ca6] rounded-2xl shadow-[0_0_20px_rgba(166,76,166,0.2)] backdrop-blur-sm";;
 
         // 🔹 Autores
         const autoresHTML = (charla.autores || []).map(autor => `
@@ -101,7 +101,7 @@ function mostrarProximamente() {
   const section = document.createElement("section");
 
   section.className =
-    "max-w-4xl mx-4 md:mx-auto bg-gray-900/80 border-2 border-[#a64ca6] p-6 rounded-2xl mt-16 shadow-[0_0_20px_rgba(166,76,166,0.2)] backdrop-blur-sm";;
+    "max-w-2xl mx-auto mt-8 p-8 md:p-10 bg-gray-900/80 border-2 border-[#a64ca6] rounded-2xl shadow-[0_0_20px_rgba(166,76,166,0.2)] backdrop-blur-sm";;
 
   section.innerHTML = `
     <h2 class="font-press-start text-yellow-400 text-lg md:text-2xl text-center">

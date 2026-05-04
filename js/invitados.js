@@ -23,12 +23,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
         section.className =
           "max-w-2xl mx-auto mt-8 p-8 md:p-10 bg-gray-900/80 border-2 border-[#a64ca6] rounded-2xl shadow-[0_0_20px_rgba(166,76,166,0.2)] backdrop-blur-sm";;
-
+        section.id = charla.id;
         // 🔹 Autores
         const autoresHTML = (charla.autores || []).map(autor => `
           <div class="flex gap-4 mt-4">
 
-            <img src="${autor.foto}" 
+            <img src="${(autor.foto)? autor.foto : "/img/userplaceholder.png"}" alt="${autor.nombre}"
                  class="w-20 h-20 rounded-full object-cover">
 
             <div>
@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
         `).join("");
 
         section.innerHTML = `
-          <h2 id="${charla.id}" class="text-xl font-bold text-yellow-400 mb-2">
+          <h2 class="text-xl font-bold text-yellow-400 mb-2">
             ${charla.titulo}
           </h2>
 
@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
             ${charla.fecha} · ${charla.horario}
           </h3>
 
-          <div class="mb-4">
+          <div class="mb-4 text-justify">
             ${charla.descripcion}
           </div>
 

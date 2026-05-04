@@ -16,6 +16,23 @@
             ],
             "recursos": [
             ]
+        },
+        {
+            "id": "alejandro-manuel-lopez-garrido",
+            "titulo": "Del videojuego a la novela visual: cómo convertir decisiones en historias memorables",
+            "fecha": "13 de Junio",
+            "horario": "10:00 - 10:45",
+            "descripcion": "<p>En esta charla exploraremos cómo el storytelling puede transformar un videojuego en una experiencia emocional, inmersiva y significativa. A partir de conceptos clave de narrativa interactiva —conflicto, estructura, personajes, decisiones, exposición y coherencia del mundo— veremos cómo la novela visual permite diseñar historias donde el jugador no solo avanza, sino que interpreta, decide y se implica.</p><p>Desde la experiencia de Hundred Games, Alejandro compartirá cómo las simulaciones narrativas pueden usarse no solo para entretener, sino también para entrenar habilidades, evaluar decisiones y crear experiencias aplicadas al mundo real. La charla conectará ideas clásicas del storytelling en videojuegos, como la importancia del conflicto, los arcos de personaje y la integración entre narrativa y diseño, con el potencial actual de la IA para crear historias interactivas más escalables y personalizadas.</p>",
+            "autores": [
+                {
+                    "nombre": "Alejandro Manuel López Garrido",
+                    "cargo": "Fundador de Hundred Games.",
+                    "bio": "<p>Alejandro es emprendedor y experto en producto digital vinculado a Filmijob y Hundred Games. Cuenta con más de 18 años de experiencia creando productos digitales, estrategias de crecimiento y soluciones innovadoras en los ámbitos de RRHH, formación, evaluación de talento y experiencias interactivas.</p><p>Actualmente impulsa Hundred Games, un proyecto centrado en el desarrollo de simulaciones narrativas y videojuegos decisionales aplicados al aprendizaje, la evaluación y el entrenamiento de competencias. Su trabajo combina storytelling, tecnología, inteligencia artificial, gamificación y diseño de experiencias para crear juegos donde cada decisión cuenta.</p>",
+                    "foto": "/img/alejandrolopez.jpeg"
+                }
+            ],
+            "recursos": [
+            ]
         }
     ]
 }

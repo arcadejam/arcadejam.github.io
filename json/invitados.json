@@ -1,0 +1,21 @@
+{
+    "invitados": [
+        {
+            "id": "rafa-laguna",
+            "titulo": "Cómo disfrutar de una Gamejam",
+            "fecha": "12 de Junio",
+            "horario": "18:00 - 19:00",
+            "descripcion": "Una Gamejam puede ser una experiencia muy interesante si la enfocas bien. Te daré las claves para que no sientas estrés y para que disfrutes del tiempo dedicado.",
+            "autores": [
+                {
+                    "nombre": "Rafa Laguna",
+                    "cargo": "Desarrollador de juegos, Profesor de CFGS y Creador de contenido.",
+                    "bio": "",
+                    "foto": "https://www.metadata.cat/imatges/entrevistes/rafa-laguna-open-source-mes-que-gratis.jpg"
+                }
+            ],
+            "recursos": [
+            ]
+        }
+    ]
+}

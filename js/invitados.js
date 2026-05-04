@@ -56,7 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
         `).join("");
 
         section.innerHTML = `
-          <h2 class="text-xl font-bold text-yellow-400 mb-2">
+          <h2 id="${charla.id}" class="text-xl font-bold text-yellow-400 mb-2">
             ${charla.titulo}
           </h2>
 
@@ -71,11 +71,15 @@ document.addEventListener("DOMContentLoaded", () => {
           <h3 class="font-semibold text-left mt-6"><u>Ponentes</u></h3>
 
           ${autoresHTML}
+          `;
 
+          if (charla.recursos && charla.recursos.length > 0) {
+            section.innerHTML += `
           <h3 class="font-semibold text-right mt-6">Recursos</h3>
 
-          ${recursosHTML}
-        `;
+           ${recursosHTML}
+          `;
+          }
 
         container.appendChild(section);
 

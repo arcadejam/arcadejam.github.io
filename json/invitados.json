@@ -33,6 +33,38 @@
             ],
             "recursos": [
             ]
+        },
+        {
+            "id": "samuel-fernandez",
+            "titulo": "Clippy IA: el retorno del asistente",
+            "fecha": "13 de Junio",
+            "horario": "10:45 - 11:15",
+            "descripcion": "<p>Clippy IA es un proyecto por 2 personas, Samuel (fundador y principal desarrollador) y Eric (parte creativa y desarrollador). Consiste en una inteligencia artificial especializada en la atención psicológica para acompañarte sobre el famoso Clippy. Se hablará sobre como lo hemos hecho, pequeñas experiencias durante el proceso y varias cosas mas.</p>",
+            "autores": [
+                {
+                    "nombre": "Samuel Fernández",
+                    "cargo": "Fundador y desarrollador de Clippy IA.",
+                    "bio": "<p>Samuel Fernández Gomez es un adolescente de 16 años que vive en Fines (Almeria). Desde sus primeros años de vida le ha gustado el mundo de la informatica. A dia de hoy, hace el grado medio de Sistemas Microinformaticos y Redes en Olula del Rio.</p>"
+                }
+            ],
+            "recursos": [
+            ]
+        },
+        {
+            "id": "ramon-santamaria",
+            "titulo": "Entrevista con el creador de Raylib",
+            "fecha": "13 de Junio",
+            "horario": "17:30 - 18:15",
+            "descripcion": "<p>En esta entrevista, podremos hablar con Ramón Santamaria, el creador de la biblioteca Raylib. Podréis hacerle preguntas para poder comentar desde su experiencia como es el crear y mantener un proyecto opensource.</p>",
+            "autores": [
+                {
+                    "nombre": "Ramón Santamaria",
+                    "cargo": "Desarrollador.",
+                    "bio": "<p>Ramón Santamaria es un desarrollador con experiencia y principal autor de la biblioteca Raylib. Uno de los proyectos opensource con más crecimiento en los últimos años.</p>"
+                }
+            ],
+            "recursos": [
+            ]
         }
     ]
 }

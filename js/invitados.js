@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
         container.appendChild(section);
 
       });
-
+      scrollToCharla(location.hash.substring(1));
     })
     .catch(() => {
       // Se queda el "PRÓXIMAMENTE"
@@ -118,4 +118,11 @@ function mostrarProximamente() {
   `;
 
   container.appendChild(section);
+}
+
+function scrollToCharla(id) {
+  const charla = document.getElementById(id);
+  if (charla) {
+    charla.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
 }

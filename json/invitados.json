@@ -65,6 +65,22 @@
             ],
             "recursos": [
             ]
+        },
+        {
+            "id": "heartdust",
+            "titulo": "HeartDust",
+            "fecha": "13 de Junio",
+            "horario": "Todo el día",
+            "descripcion": "<p>Un juego de terror JcJ/Co-op de disparos para 2 a 4 jugadores, inspirado en los juegos de la época de los años 2000. Un amigo te escribió tras descubrir que los servidores de un videojuego de vuestra infancia han vuelto a abrir. Pero algo os ha estado esperando.</p>",
+            "autores": [
+                {
+                    "nombre": "HEARTBYTE STUDIOS",
+                    "cargo": "Estudio de Videojuegos.",
+                    "bio": "<p>Heartbyte Studios es un pequeño estudio de videojuegos indie centrado en juegos de terror.</p>"
+                }
+            ],
+            "recursos": [
+            ]
         }
     ]
 }

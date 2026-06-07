@@ -76,7 +76,8 @@
                 {
                     "nombre": "HEARTBYTE STUDIOS",
                     "cargo": "Estudio de Videojuegos.",
-                    "bio": "<p>Heartbyte Studios es un pequeño estudio de videojuegos indie centrado en juegos de terror.</p>"
+                    "bio": "<p>Heartbyte Studios es un pequeño estudio de videojuegos indie centrado en juegos de terror.</p>",
+                    "foto": "/img/HEARTDUST.png"
                 }
             ],
             "recursos": [

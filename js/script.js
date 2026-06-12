@@ -1,7 +1,7 @@
 /* SCRIPT PARA LA CUENTA ATRÁS */
 
     // Establecer la fecha objetivo: 12 de Junio de 2026 a las 17:00:00
-    const countDownDate = new Date("Jun 12, 2026 17:00:00").getTime();
+    const countDownDate = new Date("Jun 13, 2026 19:00:00").getTime();
 
     // Actualizar la cuenta atrás cada 1 segundo (1000 milisegundos)
     const x = setInterval(function () {

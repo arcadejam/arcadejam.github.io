@@ -41,6 +41,11 @@
                     "nombre": "Carmen Rumí",
                     "rol": "Desarrolladora",
                     "descripcion": "Estudiante de DAM que quiere hacer el curso de especialización de videojuegos/estudiante y diseñadora."
+                },
+                {
+                    "nombre": "Juan Antonio Oña",
+                    "rol": "Producción musical y programación",
+                    "descripcion": "Estudiante de DAM"
                 }
             ]
         },

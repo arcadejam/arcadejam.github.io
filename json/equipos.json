@@ -2,13 +2,13 @@
     "equipos": [
         {
             "logo": "/img/valhalla-workshop.png",
-            "titulo": "",
+            "titulo": "Event Horizon: Zero",
             "equipo": "Valhalla Studios",
             "genero": "Shot'emup",
-            "descripcion": "",
+            "descripcion": "Es tu último suspiro en esta guerra. Tu Interceptor apenas responde de milagro. Tu navegante sigue con vida aún. Acaba tu batalla. Sobrevive o muere llevandote a tus enemigos",
             "motor": "Godot Engine",
             "jugadores": "1",
-            "descarga": "",
+            "descarga": "https://valhallastudios.itch.io/event-horizon-zero",
             "miembros": [
                 {
                     "nombre": "Juan",
@@ -24,13 +24,13 @@
         },
         {
             
-            "titulo": "",
+            "titulo": "Rescoldo de Vivi",
             "equipo": "Los asiatic Attack",
-            "genero": "",
-            "descripcion": "Estudiantes de DAM-SP probando sus limites",
-            "motor": "",
-            "jugadores": "",
-            "descarga": "",
+            "genero": "Plataformas",
+            "descripcion": "Ayuda al mago Vivi a llegar a la cima.",
+            "motor": "Unity",
+            "jugadores": "1",
+            "descarga": "https://drive.google.com/file/d/1hah9hzeYx_5bmhJR_kycnFnh0tWtANhv/view?usp=sharing",
             "miembros": [
                 {
                     "nombre": "Rafael Segura",
@@ -46,13 +46,13 @@
         },
         {
             "logo": "/img/quesito.png",
-            "titulo": "",
+            "titulo": "Vault of The Time Mage",
             "equipo": "Quesito Games",
-            "genero": "",
-            "descripcion": "Equipo formado por dos personas que disfrutan creando",
-            "motor": "",
-            "jugadores": "",
-            "descarga": "",
+            "genero": "Point and Click",
+            "descripcion": "Como propietario de una tienda de objetos anacrónicos, tienes el deber de satisfacer las necesidades de tus clientes, de todas las épocas. Combina diferentes objetos, crea nuevos artilugios, y ¡hazte rico!",
+            "motor": "Love2D + Horchata(Custom)",
+            "jugadores": "1",
+            "descarga": "https://juanjosalvador.itch.io/vault-of-the-time-mage",
             "miembros": [
                 {
                     "nombre": "Juanjo Salvador",
@@ -67,13 +67,13 @@
         },
         {
             "logo": "img/AC.png",
-            "titulo": "",
+            "titulo": "Tenías Una Tarea",
             "equipo": "Assembling Chickens Games",
-            "genero": "",
-            "descripcion": "Estudio de desarrollo situado en la Alpujarra almeriense",
-            "motor": "",
-            "jugadores": "",
-            "descarga": "",
+            "genero": "Aventura",
+            "descripcion": "Tienes una sola tarea. Crear el ramo favorito de tu pareja. ¿Conseguirás hacerlo sin distraerte?",
+            "motor": "Godot",
+            "jugadores": "1",
+            "descarga": "https://rabbitz.itch.io/tenas-una-tarea",
             "miembros": [
                 {
                     "nombre": "David Church",
@@ -88,13 +88,13 @@
             ]
         },
         {
-            "titulo": "",
+            "titulo": "Momentum",
             "equipo": "Los Viejos del Poniente",
-            "genero": "",
-            "descripcion": "Autodidacta en la Jam",
-            "motor": "",
+            "genero": "VR scape room",
+            "descripcion": "Resuelve puzzles en tiempo bala",
+            "motor": "Unreal (APK para META QUEST 3) No especificaba las normas que fuese solo para Windows, Linux o Web",
             "jugadores": "1",
-            "descarga": "",
+            "descarga": "https://drive.google.com/drive/folders/1uRbhW9pgrwM1_A45bnTJjZEgqGhnnXfB",
             "miembros": [
                 {
                     "nombre": "Miguel Valverde",

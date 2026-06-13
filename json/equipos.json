@@ -56,11 +56,13 @@
             "miembros": [
                 {
                     "nombre": "Juanjo Salvador",
-                    "rol": "Programador"
+                    "rol": "Programador",
+                    "descripcion": ""
                 },
                 {
                     "nombre": "Kornelia Reza",
-                    "rol": "Diseñadora / Ilustradora"                }
+                    "rol": "Diseñadora / Ilustradora",
+                    "descripcion": ""                }
             ]
         },
         {
@@ -75,11 +77,13 @@
             "miembros": [
                 {
                     "nombre": "David Church",
-                    "rol": "Programador / Main Designer"
+                    "rol": "Programador / Main Designer",
+                    "descripcion": ""
                 },
                 {
                     "nombre": "María Milán",
-                    "rol": "Música/Audio"
+                    "rol": "Música/Audio",
+                    "descripcion": ""
                 }
             ]
         },
@@ -94,21 +98,25 @@
             "miembros": [
                 {
                     "nombre": "Miguel Valverde",
-                    "rol": "3D"
+                    "rol": "3D",
+                    "descripcion": ""
                 },
                 {
                     "nombre": "Evaristo Arana",
-                    "rol": "Programación"               
+                    "rol": "Programación",
+                    "descripcion": ""               
                  },
                  {
 
                     "nombre": "Nia Robles",
-                    "rol": "Arte"               
+                    "rol": "Arte",
+                    "descripcion": ""               
                  },
                  {
 
                     "nombre": "Hugo Serrano",
-                    "rol": "Programación"               
+                    "rol": "Programación",
+                    "descripcion": ""               
                  }
             ]
         }

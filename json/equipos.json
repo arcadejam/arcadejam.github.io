@@ -1,0 +1,117 @@
+{
+    "equipos": [
+        {
+            "logo": "/img/valhalla-workshop.png",
+            "titulo": "",
+            "equipo": "Valhalla Studios",
+            "genero": "Shot'emup",
+            "descripcion": "",
+            "motor": "Godot Engine",
+            "jugadores": "1",
+            "descarga": "",
+            "miembros": [
+                {
+                    "nombre": "Juan",
+                    "rol": "Desarrollador",
+                    "descripcion": "Desarrollador de juegos con experiencia en  RPG Maker y Ren'py de manera autodidacta, estudiante de programación / Programador"
+                },
+                {
+                    "nombre": "Irene",
+                    "rol": "Diseño e Ilustración",
+                    "descripcion": "Licenciada en Bellas Artes y Diseño gráfico / Diseñadora de personajes"
+                }
+            ]
+        },
+        {
+            
+            "titulo": "",
+            "equipo": "Los asiatic Attack",
+            "genero": "",
+            "descripcion": "Estudiantes de DAM-SP probando sus limites",
+            "motor": "",
+            "jugadores": "",
+            "descarga": "",
+            "miembros": [
+                {
+                    "nombre": "Rafael Segura",
+                    "rol": "Desarrollador",
+                    "descripcion": "Estudiante de DAM y con conocimiento de videojuegos /Desarrollador."
+                },
+                {
+                    "nombre": "Carmen Rumí",
+                    "rol": "Desarrolladora",
+                    "descripcion": "Estudiante de DAM que quiere hacer el curso de especialización de videojuegos/estudiante y diseñadora."
+                }
+            ]
+        },
+        {
+            "logo": "/img/quesito.png",
+            "titulo": "",
+            "equipo": "Quesito Games",
+            "genero": "",
+            "descripcion": "Equipo formado por dos personas que disfrutan creando",
+            "motor": "",
+            "jugadores": "",
+            "descarga": "",
+            "miembros": [
+                {
+                    "nombre": "Juanjo Salvador",
+                    "rol": "Programador"
+                },
+                {
+                    "nombre": "Kornelia Reza",
+                    "rol": "Diseñadora / Ilustradora"                }
+            ]
+        },
+        {
+            "logo": "img/AC.png",
+            "titulo": "",
+            "equipo": "Assembling Chickens Games",
+            "genero": "",
+            "descripcion": "Estudio de desarrollo situado en la Alpujarra almeriense",
+            "motor": "",
+            "jugadores": "",
+            "descarga": "",
+            "miembros": [
+                {
+                    "nombre": "David Church",
+                    "rol": "Programador / Main Designer"
+                },
+                {
+                    "nombre": "María Milán",
+                    "rol": "Música/Audio"
+                }
+            ]
+        },
+        {
+            "titulo": "",
+            "equipo": "Los Viejos del Poniente",
+            "genero": "",
+            "descripcion": "Autodidacta en la Jam",
+            "motor": "",
+            "jugadores": "1",
+            "descarga": "",
+            "miembros": [
+                {
+                    "nombre": "Miguel Valverde",
+                    "rol": "3D"
+                },
+                {
+                    "nombre": "Evaristo Arana",
+                    "rol": "Programación"               
+                 },
+                 {
+
+                    "nombre": "Nia Robles",
+                    "rol": "Arte"               
+                 },
+                 {
+
+                    "nombre": "Hugo Serrano",
+                    "rol": "Programación"               
+                 }
+            ]
+        }
+        
+    ]
+}

@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
         section.innerHTML = `
           <div class="flex flex-col md:flex-row gap-6">
 
-            <img src="${equipo.logo}" class="w-32 h-32 object-contain">
+            <img src="${(equipo.logo)?equipo.logo: "/img/group.png"}" class="w-32 h-32 object-contain">
 
             <div>
 
